@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,10 +15,14 @@ class HomeActivity : AppCompatActivity() {
         val intent = intent
         val str = intent.getStringExtra("message_name")
         val num= intent.getStringExtra("message_num")
+        val add=intent.getStringExtra("message_add")
+        val show=findViewById<TextView>(R.id.address)
+        show.text=add
         in_profile.setOnClickListener(){
             val intent = Intent(this,ProfileActivity::class.java)
             intent.putExtra("message_name", str)
             intent.putExtra("message_num",num)
+            intent.putExtra("message_add",add)
             startActivity(intent)
         }
     }

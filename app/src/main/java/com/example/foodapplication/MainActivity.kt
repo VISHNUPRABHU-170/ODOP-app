@@ -16,14 +16,16 @@ class MainActivity : AppCompatActivity() {
         val send_button=findViewById<TextView>(R.id.login)
         val name=findViewById<EditText>(R.id.entername)
         val num=findViewById<EditText>(R.id.enternumber)
+        val add=findViewById<EditText>(R.id.enteraddress)
         send_button.setOnClickListener(){
             val str=name.text.toString()
             val intent=Intent(this,HomeActivity::class.java)
-            if(name.text.isBlank() || num.text.isBlank()){
+            if(name.text.isBlank() || num.text.isBlank() || add.text.isBlank()){
                 Toast.makeText(applicationContext,"Please fill the details",Toast.LENGTH_SHORT).show()
             }else{
                 intent.putExtra("message_name", str)
                 intent.putExtra("message_num",num.text.toString())
+                intent.putExtra("message_add",add.text.toString())
                 startActivity(intent)
             }
         }
