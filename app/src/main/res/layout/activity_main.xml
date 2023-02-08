@@ -14,7 +14,7 @@
         android:layout_marginStart="90dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="90dp"
-        android:text="@string/foodie"
+        android:text="ODOP"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -50,10 +50,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enteraddress"
-        app:layout_constraintVertical_bias="0.356"
+        app:layout_constraintVertical_bias="0.287"
         tools:text="Get Started" />
 
     <EditText
@@ -102,7 +102,7 @@
         android:layout_marginEnd="90dp"
         android:background="@drawable/white"
         android:ems="10"
-        android:hint="Enter Your Address"
+        android:hint="Enter Your District"
         android:inputType="textPostalAddress"
         android:textAlignment="center"
         android:textColor="@android:color/black"

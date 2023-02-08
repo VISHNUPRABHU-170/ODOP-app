@@ -25,7 +25,7 @@
         android:background="@drawable/white"
         android:backgroundTint="@color/material_dynamic_neutral90"
         android:ems="10"
-        android:hint="search for resturants"
+        android:hint="search for district"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/black"
