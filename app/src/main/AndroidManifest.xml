@@ -12,6 +12,11 @@
         android:theme="@style/Theme.FOODAPPLICATION"
         tools:targetApi="31">
         <activity
+            android:name=".ScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.FOODAPPLICATION.NoActionBar" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
@@ -25,8 +30,7 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
     </application>
-llh
+
 </manifest>

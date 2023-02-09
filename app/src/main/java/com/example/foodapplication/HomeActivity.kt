@@ -25,5 +25,11 @@ class HomeActivity : AppCompatActivity() {
             intent.putExtra("message_add",add)
             startActivity(intent)
         }
+        val in_cart=findViewById(R.id.carticon) as ImageView
+        in_cart.setOnClickListener(){
+            show.text=add
+            val intent = Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
