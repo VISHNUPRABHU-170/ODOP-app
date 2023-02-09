@@ -5,10 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class CartActivity : AppCompatActivity() {
+class NotificationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cart)
+        setContentView(R.layout.activity_notification)
+
         supportActionBar?.hide()
 
         val str = intent.getStringExtra("message_name")
@@ -24,9 +25,9 @@ class CartActivity : AppCompatActivity() {
             val intent = Intent(this,ProfileActivity::class.java)
             startActivity(intent)
         }
-        val in_notification=findViewById(R.id.notificationicon) as ImageView
-        in_notification.setOnClickListener(){
-            intent.putExtra("message_name", str)
+        val in_cart=findViewById(R.id.carticon) as ImageView
+        in_cart.setOnClickListener(){
+            intent.putExtra("message_add",str)
             val intent = Intent(this,CartActivity::class.java)
             startActivity(intent)
         }
