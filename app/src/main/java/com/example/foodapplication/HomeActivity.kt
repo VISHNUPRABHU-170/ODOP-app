@@ -28,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         val in_cart=findViewById(R.id.carticon) as ImageView
         in_cart.setOnClickListener(){
             show.text=add
-            val intent = Intent(this,HomeActivity::class.java)
+            val intent = Intent(this,CartActivity::class.java)
             startActivity(intent)
         }
     }
