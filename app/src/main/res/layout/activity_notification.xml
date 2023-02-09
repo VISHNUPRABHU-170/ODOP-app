@@ -109,22 +109,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/noti" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="414dp"
-        android:layout_height="43dp"
-        android:background="@color/purple_700"
-        android:backgroundTint="@color/purple_500"
-        android:text="  Notifications"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
@@ -135,5 +119,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.934" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="413dp"
+        android:layout_height="47dp"
+        android:background="@color/purple_700"
+        android:text="    Notifications"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
