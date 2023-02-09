@@ -33,8 +33,7 @@ class HomeActivity : AppCompatActivity() {
         }
         val in_notification=findViewById(R.id.notificationicon) as ImageView
         in_notification.setOnClickListener(){
-            intent.putExtra("message_add",add)
-            val intent = Intent(this,CartActivity::class.java)
+            val intent = Intent(this,NotificationActivity::class.java)
             startActivity(intent)
         }
     }
