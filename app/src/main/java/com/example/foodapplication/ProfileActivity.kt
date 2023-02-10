@@ -1,33 +1,22 @@
 package com.example.foodapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 
 class ProfileActivity : AppCompatActivity() {
+    private lateinit var edit: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        lateinit var receiver_msg: TextView
-        lateinit var num: TextView
-        lateinit var add: TextView
-        receiver_msg = findViewById(R.id.name)
-        num=findViewById(R.id.number)
-        add=findViewById(R.id.address)
-        // create the get Intent object
-        val intent = intent
-        // receive the value by getStringExtra() method and
-        // key must be same which is send by first activity
-        val str = intent.getStringExtra("message_name")
-        val str1 = intent.getStringExtra("message_num")
-        val str2 = intent.getStringExtra("message_add")
-        // display the string into textView
-        receiver_msg.text = str
-        num.text=str1
-        add.text=str2
+        edit=findViewById(R.id.Edit)
+
+        edit.setOnClickListener(){
+            val intent =Intent(this,EditprofileActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
