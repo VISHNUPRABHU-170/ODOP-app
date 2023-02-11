@@ -12,6 +12,18 @@
         android:theme="@style/Theme.FOODAPPLICATION"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigninTypeActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditprofileActivity"
             android:exported="false" />
         <activity
