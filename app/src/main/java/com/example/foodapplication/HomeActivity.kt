@@ -3,10 +3,12 @@ package com.example.foodapplication
 import android.R.attr.phoneNumber
 import android.content.Intent
 import android.os.Bundle
+import android.os.UserHandle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
 import com.google.firebase.ktx.Firebase
 
 
@@ -18,6 +20,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var home: ImageView
     private lateinit var location: TextView
     private lateinit var auth: FirebaseAuth
+    private lateinit var dbRef: DatabaseReference
+    private lateinit var uid: String
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
@@ -55,5 +59,11 @@ class HomeActivity : AppCompatActivity() {
         home=findViewById(R.id.home)
         location=findViewById(R.id.address)
         auth= FirebaseAuth.getInstance()
+        dbRef=FirebaseDatabase.getInstance().getReference("User Information")
+        val uid=auth.currentUser?.uid.toString()
+        dbRef.child(uid).get().addOnSuccessListener {
+            val lo = it.child("str4").value
+            location.text=lo.toString()
+        }
     }
 }

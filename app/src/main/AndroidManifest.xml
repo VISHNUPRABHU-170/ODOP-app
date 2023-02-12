@@ -18,9 +18,6 @@
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".SigninTypeActivity"
-            android:exported="false" />
-        <activity
             android:name=".EditprofileActivity"
             android:exported="false" />
         <activity

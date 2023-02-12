@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -15,6 +16,8 @@ class EditprofileActivity : AppCompatActivity() {
     private lateinit var mailid: EditText
     private lateinit var location: EditText
     private lateinit var save: Button
+    private lateinit var auth: FirebaseAuth
+    private lateinit var uid: String
 
     private lateinit var dbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +30,7 @@ class EditprofileActivity : AppCompatActivity() {
         mailid=findViewById(R.id.mailid)
         location=findViewById(R.id.address)
         save=findViewById(R.id.save)
+        auth=FirebaseAuth.getInstance()
 
         dbRef=FirebaseDatabase.getInstance().getReference("User Information")
 
@@ -55,8 +59,8 @@ class EditprofileActivity : AppCompatActivity() {
             val details=dbRef.push().key!!
 
             val info=InfoModel(str1,str2,str3,str4)
-
-            dbRef.child(details).setValue(info)
+            uid=auth.currentUser?.uid.toString()
+            dbRef.child(uid).setValue(info)
                 .addOnCompleteListener(){
                     Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener(){
