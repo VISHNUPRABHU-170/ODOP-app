@@ -5,20 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SignupActivity">
+    tools:context=".OtpActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="412dp"
+        android:layout_height="74dp"
         android:background="@color/material_dynamic_neutral_variant90"
-        android:text="                    "
+        android:text="                 "
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -38,12 +38,12 @@
         app:layout_constraintVertical_bias="0.13" />
 
     <EditText
-        android:id="@+id/number"
+        android:id="@+id/otp"
         android:layout_width="295dp"
         android:layout_height="67dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="       Enter Phone number"
+        android:hint="       Enter OTP"
         android:inputType="numberSigned"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
@@ -55,57 +55,16 @@
         app:layout_constraintVertical_bias="0.213" />
 
     <Button
-        android:id="@+id/verify"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Verify mobile number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="135dp"
-        android:layout_height="45dp"
-        android:text="Enter the OTP"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/otp"
-        android:layout_width="295dp"
-        android:layout_height="67dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:hint="        Enter the OTP"
-        android:inputType="numberSigned"
-        android:textColor="@color/black"
-        android:textColorHint="@color/material_dynamic_neutral30"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.612" />
-
-    <Button
         android:id="@+id/go"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Continue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/textView25"
@@ -128,9 +87,8 @@
         android:text="Resend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
-
+        app:layout_constraintVertical_bias="0.348" />
 </androidx.constraintlayout.widget.ConstraintLayout>

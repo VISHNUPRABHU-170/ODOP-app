@@ -16,14 +16,14 @@
       "oauth_client": [
         {
           "client_id": "23710534958-t818t2ogn7r2il5460tdjqq8palv5dfk.apps.googleusercontent.com",
-          "client_type": 1,6q
+          "client_type": 1,
           "android_info": {
             "package_name": "com.example.foodapplication",
             "certificate_hash": "80981415ae4edd237f7b71e75595b52a61316091"
           }
         },
         {
-          "client_id": "23710534958-i3mta61se3sc5049m0i0js0o9ndgcs5b.apps.googleusercontent.com",
+          "client_id": "23710534958-6bko19v1jc5c2u5iuem6v1g10jujmqfr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -36,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "23710534958-i3mta61se3sc5049m0i0js0o9ndgcs5b.apps.googleusercontent.com",
+              "client_id": "23710534958-6bko19v1jc5c2u5iuem6v1g10jujmqfr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

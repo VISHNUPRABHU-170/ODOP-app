@@ -6,50 +6,60 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
-import com.google.firebase.database.FirebaseDatabase
 import java.util.concurrent.TimeUnit
 
-class SignupActivity : AppCompatActivity() {
-
-    private lateinit var number: EditText
-    private lateinit var otp: EditText
-    private lateinit var verify: Button
+class OtpActivity : AppCompatActivity() {
     private lateinit var go: Button
+    private lateinit var otp: EditText
     private lateinit var resend: Button
     private lateinit var auth: FirebaseAuth
+    private lateinit var OTP: String
+    private lateinit var typedOTP: String
+    private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
+    private lateinit var Number: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_otp)
         supportActionBar?.hide()
 
-        number=findViewById(R.id.number)
-        otp=findViewById(R.id.otp)
-        verify=findViewById(R.id.verify)
-        go=findViewById(R.id.go)
+        OTP=intent.getStringExtra("OTP").toString()
+        resendToken=intent.getParcelableExtra("resendToken")!!
+        Number=intent.getStringExtra("phoneNumber")!!
 
-        var number=number.text.toString()
-        var otp=otp.text.toString()
+        init()
 
-        verify.setOnClickListener(){
-            if(number.isBlank() || number.trim().isBlank() || number.length!=10){
-                Toast.makeText(this,"Please enter a valid mobile number ",Toast.LENGTH_SHORT).show()
+        go.setOnClickListener(){
+            typedOTP=otp.text.toString()
+            if(typedOTP.trim().isBlank() || typedOTP.length!=6){
+                otp.error="Please enter a valid OTP"
             }else{
-                number = "+91$number"
-
-                val options = PhoneAuthOptions.newBuilder(auth)
-                    .setPhoneNumber(number)       // Phone number to verify
-                    .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                    .setActivity(this)                 // Activity (for callback binding)
-                    .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
-                    .build()
-                PhoneAuthProvider.verifyPhoneNumber(options)
+                val credential: PhoneAuthCredential=PhoneAuthProvider.getCredential(
+                    OTP,typedOTP
+                )
+                signInWithPhoneAuthCredential(credential)
             }
         }
+
+        resend.setOnClickListener(){
+            resendVerificationCode()
+        }
+
+
+    }
+
+    private fun init(){
+        go=findViewById(R.id.go)
+        otp=findViewById(R.id.otp)
+        resend=findViewById(R.id.resend)
+        auth=FirebaseAuth.getInstance()
+    }
+
+    private fun sendToMain(){
+        startActivity(Intent(this,HomeActivity::class.java))
     }
 
     private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
@@ -57,18 +67,28 @@ class SignupActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-
-
-
+                    Log.d("TAG", "signInWithCredential:success")
+                    sendToMain()
                 } else {
                     // Sign in failed, display a message and update the UI
-
+                    Log.w("TAG", "signInWithCredential:failure", task.exception)
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
                         // The verification code entered was invalid
                     }
                     // Update UI
                 }
             }
+    }
+
+    private fun resendVerificationCode(){
+        val options = PhoneAuthOptions.newBuilder(auth)
+            .setPhoneNumber(Number)       // Phone number to verify
+            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+            .setActivity(this)                 // Activity (for callback binding)
+            .setCallbacks(callbacks)
+            .setForceResendingToken(resendToken)// OnVerificationStateChangedCallbacks
+            .build()
+        PhoneAuthProvider.verifyPhoneNumber(options)
     }
 
     private val callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -80,7 +100,6 @@ class SignupActivity : AppCompatActivity() {
             // 2 - Auto-retrieval. On some devices Google Play services can automatically
             //     detect the incoming verification SMS and perform verification without
             //     user action.
-
             signInWithPhoneAuthCredential(credential)
         }
 
@@ -91,10 +110,10 @@ class SignupActivity : AppCompatActivity() {
 
             if (e is FirebaseAuthInvalidCredentialsException) {
                 // Invalid request
-                Log.d("TAG","Verification failed : ${e.toString()}")
+                Log.d("TAG", "Verification failed ${e.toString()}")
             } else if (e is FirebaseTooManyRequestsException) {
                 // The SMS quota for the project has been exceeded
-                Log.d("TAG","Verification failed : ${e.toString()}")
+                Log.d("TAG", "Verification failed ${e.toString()}")
             }
 
             // Show a message and update the UI
@@ -107,8 +126,8 @@ class SignupActivity : AppCompatActivity() {
             // The SMS verification code has been sent to the provided phone number, we
             // now need to ask the user to enter the code and then construct a credential
             // by combining the code with a verification ID.
-            // Save verification ID and resending token so we can use them later
-
+            OTP = verificationId
+            resendToken = token
         }
     }
 
