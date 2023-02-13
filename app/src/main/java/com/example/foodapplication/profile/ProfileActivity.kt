@@ -1,13 +1,13 @@
-package com.example.foodapplication
+package com.example.foodapplication.profile
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.foodapplication.databinding.ActivityCartBinding
+import com.example.foodapplication.R
+import com.example.foodapplication.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -34,13 +34,13 @@ class ProfileActivity : AppCompatActivity() {
         readData(uid)
 
         edit.setOnClickListener(){
-            val intent =Intent(this,EditprofileActivity::class.java)
+            val intent =Intent(this, EditprofileActivity::class.java)
             startActivity(intent)
         }
 
         signout.setOnClickListener(){
             auth.signOut()
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
 

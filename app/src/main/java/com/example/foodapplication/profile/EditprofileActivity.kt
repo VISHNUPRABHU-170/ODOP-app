@@ -1,10 +1,11 @@
-package com.example.foodapplication
+package com.example.foodapplication.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.foodapplication.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -58,7 +59,7 @@ class EditprofileActivity : AppCompatActivity() {
         else{
             val details=dbRef.push().key!!
 
-            val info=InfoModel(str1,str2,str3,str4)
+            val info= InfoModel(str1,str2,str3,str4)
             uid=auth.currentUser?.uid.toString()
             dbRef.child(uid).setValue(info)
                 .addOnCompleteListener(){

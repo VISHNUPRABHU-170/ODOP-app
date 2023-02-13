@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".CartActivity">
+    tools:context=".cart.CartActivity">
 
     <ImageView
         android:id="@+id/profile"
@@ -90,8 +90,9 @@
 
     <Button
         android:id="@+id/gohome"
-        android:layout_width="206dp"
-        android:layout_height="53dp"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:background="@color/purple_500"
         android:text="Continue Shopping"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,18 +1,19 @@
 package com.example.foodapplication
 
-import android.R.attr.phoneNumber
 import android.content.Intent
 import android.os.Bundle
-import android.os.UserHandle
-import android.view.View
-import android.widget.EditText
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.foodapplication.cart.CartActivity
+import com.example.foodapplication.district.CoimbatoreActivity
+import com.example.foodapplication.notification.NotificationActivity
+import com.example.foodapplication.profile.ProfileActivity
+import com.example.foodapplication.search.SearchActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.ktx.Firebase
 
 
 class HomeActivity : AppCompatActivity() {
@@ -27,6 +28,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var uid: String
     private lateinit var search: ImageView
     private lateinit var scroll: ScrollView
+    private lateinit var d1: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
@@ -34,17 +36,17 @@ class HomeActivity : AppCompatActivity() {
         init()
 
         profile.setOnClickListener(){
-            val intent = Intent(this,ProfileActivity::class.java)
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 
         notification.setOnClickListener(){
-            val intent=Intent(this,NotificationActivity::class.java)
+            val intent=Intent(this, NotificationActivity::class.java)
             startActivity(intent)
         }
 
         cart.setOnClickListener(){
-            val intent=Intent(this,CartActivity::class.java)
+            val intent=Intent(this, CartActivity::class.java)
             startActivity(intent)
         }
 
@@ -54,9 +56,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
         search.setOnClickListener(){
-            startActivity(Intent(this,SearchActivity::class.java))
+            startActivity(Intent(this, SearchActivity::class.java))
         }
 
+        d1.setOnClickListener(){
+            startActivity(Intent(this, CoimbatoreActivity::class.java))
+        }
 
     }
 
@@ -76,5 +81,6 @@ class HomeActivity : AppCompatActivity() {
         }
         search=findViewById(R.id.image)
         scroll=findViewById(R.id.scrollView)
+        d1=findViewById(R.id.d1)
     }
 }

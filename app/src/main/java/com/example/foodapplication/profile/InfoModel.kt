@@ -1,4 +1,4 @@
-package com.example.foodapplication
+package com.example.foodapplication.profile
 
 data class InfoModel (
 

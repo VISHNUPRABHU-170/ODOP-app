@@ -1,10 +1,14 @@
-package com.example.foodapplication
+package com.example.foodapplication.notification
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import com.example.foodapplication.HomeActivity
+import com.example.foodapplication.R
+import com.example.foodapplication.cart.CartActivity
+import com.example.foodapplication.profile.ProfileActivity
 
 class NotificationActivity : AppCompatActivity() {
     private lateinit var profile: ImageView
@@ -20,27 +24,27 @@ class NotificationActivity : AppCompatActivity() {
         init()
 
         profile.setOnClickListener(){
-            val intent = Intent(this,ProfileActivity::class.java)
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 
         notification.setOnClickListener(){
-            val intent=Intent(this,NotificationActivity::class.java)
+            val intent=Intent(this, NotificationActivity::class.java)
             startActivity(intent)
         }
 
         cart.setOnClickListener(){
-            val intent=Intent(this,CartActivity::class.java)
+            val intent=Intent(this, CartActivity::class.java)
             startActivity(intent)
         }
 
         home.setOnClickListener(){
-            val intent=Intent(this,HomeActivity::class.java)
+            val intent=Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
         gohome.setOnClickListener(){
-            startActivity(Intent(this,HomeActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
     }
