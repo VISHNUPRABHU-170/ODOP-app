@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.example.foodapplication.HomeActivity
 import com.example.foodapplication.R
 import com.google.firebase.FirebaseException
@@ -15,7 +16,12 @@ import java.util.concurrent.TimeUnit
 
 class OtpActivity : AppCompatActivity() {
     private lateinit var go: Button
-    private lateinit var otp: EditText
+    private lateinit var otp1: EditText
+    private lateinit var otp2: EditText
+    private lateinit var otp3: EditText
+    private lateinit var otp4: EditText
+    private lateinit var otp5: EditText
+    private lateinit var otp6: EditText
     private lateinit var resend: Button
     private lateinit var auth: FirebaseAuth
     private lateinit var OTP: String
@@ -35,9 +41,9 @@ class OtpActivity : AppCompatActivity() {
         init()
 
         go.setOnClickListener(){
-            typedOTP=otp.text.toString()
+            typedOTP=otp1.text.toString()+otp2.text.toString()+otp3.text.toString()+otp4.text.toString()+otp5.text.toString()+otp6.text.toString()
             if(typedOTP.trim().isBlank() || typedOTP.length!=6){
-                otp.error="Please enter a valid OTP"
+                Toast.makeText(this,"Please enter a valid OTP",Toast.LENGTH_SHORT).show()
             }else{
                 val credential: PhoneAuthCredential=PhoneAuthProvider.getCredential(
                     OTP,typedOTP
@@ -55,7 +61,12 @@ class OtpActivity : AppCompatActivity() {
 
     private fun init(){
         go=findViewById(R.id.go)
-        otp=findViewById(R.id.otp)
+        otp1=findViewById(R.id.otp1)
+        otp2=findViewById(R.id.otp2)
+        otp3=findViewById(R.id.otp3)
+        otp4=findViewById(R.id.otp4)
+        otp5=findViewById(R.id.otp5)
+        otp6=findViewById(R.id.otp6)
         resend=findViewById(R.id.resend)
         auth=FirebaseAuth.getInstance()
     }
