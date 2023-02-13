@@ -58,7 +58,7 @@
         app:srcCompat="@drawable/cart_icon" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.591" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text2"
         android:layout_width="347dp"
         android:layout_height="32dp"
         android:layout_marginStart="90dp"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.753" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image"
         android:layout_width="326dp"
         android:layout_height="355dp"
         android:layout_marginTop="72dp"
@@ -172,4 +172,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:text="                                      "
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
 </androidx.constraintlayout.widget.ConstraintLayout>

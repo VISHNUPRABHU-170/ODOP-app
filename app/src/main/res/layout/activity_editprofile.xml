@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral80"
+    android:background="@color/white"
     tools:context=".profile.EditprofileActivity">
 
     <TextView
@@ -72,7 +72,7 @@
         android:id="@+id/name"
         android:layout_width="306dp"
         android:layout_height="46dp"
-        android:background="@color/material_dynamic_primary99"
+        android:background="@drawable/border"
         android:ems="10"
         android:hint="  Enter  Your Name"
         android:inputType="textPersonName"
@@ -89,7 +89,7 @@
         android:id="@+id/number"
         android:layout_width="306dp"
         android:layout_height="46dp"
-        android:background="@color/white"
+        android:background="@drawable/border"
         android:ems="10"
         android:hint="  Enter Your Mobile Number"
         android:inputType="number"
@@ -106,7 +106,7 @@
         android:id="@+id/mailid"
         android:layout_width="306dp"
         android:layout_height="46dp"
-        android:background="@color/white"
+        android:background="@drawable/border"
         android:ems="10"
         android:hint="  Enter Your Mail ID"
         android:inputType="textEmailAddress"
@@ -123,7 +123,7 @@
         android:id="@+id/address"
         android:layout_width="306dp"
         android:layout_height="46dp"
-        android:background="@color/white"
+        android:background="@drawable/border"
         android:ems="10"
         android:hint="  Enter Your Location"
         android:inputType="textPostalAddress"
@@ -167,7 +167,7 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="47dp"
         android:background="@color/purple_700"
         android:text="    Edit Profile"

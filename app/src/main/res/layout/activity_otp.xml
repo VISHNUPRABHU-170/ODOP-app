@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="74dp"
         android:background="@color/material_dynamic_neutral_variant90"
         android:text="                 "
@@ -41,6 +41,8 @@
         android:id="@+id/otp"
         android:layout_width="295dp"
         android:layout_height="67dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
         android:background="@drawable/border"
         android:ems="10"
         android:hint="       Enter OTP"
@@ -56,12 +58,13 @@
 
     <Button
         android:id="@+id/go"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
         android:text="Continue"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintEnd_toEndOf="@+id/otp"
+        app:layout_constraintHorizontal_bias="0.965"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.348" />
@@ -70,7 +73,9 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:text="Verification"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,8 +92,8 @@
         android:text="Resend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="@+id/otp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.348" />
 </androidx.constraintlayout.widget.ConstraintLayout>

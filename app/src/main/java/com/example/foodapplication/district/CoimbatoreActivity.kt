@@ -6,6 +6,7 @@ import com.example.foodapplication.R
 
 class CoimbatoreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coimbatore)
     }
