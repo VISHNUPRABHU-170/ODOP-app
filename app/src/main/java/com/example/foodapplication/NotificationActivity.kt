@@ -3,6 +3,7 @@ package com.example.foodapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 
 class NotificationActivity : AppCompatActivity() {
@@ -10,6 +11,7 @@ class NotificationActivity : AppCompatActivity() {
     private lateinit var notification: ImageView
     private lateinit var cart: ImageView
     private lateinit var home: ImageView
+    private lateinit var gohome: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notification)
@@ -37,6 +39,10 @@ class NotificationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        gohome.setOnClickListener(){
+            startActivity(Intent(this,HomeActivity::class.java))
+        }
+
     }
 
     private fun init() {
@@ -44,5 +50,6 @@ class NotificationActivity : AppCompatActivity() {
         notification = findViewById(R.id.notification)
         cart = findViewById(R.id.cart)
         home = findViewById(R.id.home)
+        gohome=findViewById(R.id.gohome)
     }
 }

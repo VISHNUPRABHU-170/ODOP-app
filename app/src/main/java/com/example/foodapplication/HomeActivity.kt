@@ -4,7 +4,10 @@ import android.R.attr.phoneNumber
 import android.content.Intent
 import android.os.Bundle
 import android.os.UserHandle
+import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -22,6 +25,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var dbRef: DatabaseReference
     private lateinit var uid: String
+    private lateinit var search: ImageView
+    private lateinit var scroll: ScrollView
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
@@ -48,6 +53,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        search.setOnClickListener(){
+            startActivity(Intent(this,SearchActivity::class.java))
+        }
+
 
     }
 
@@ -65,5 +74,7 @@ class HomeActivity : AppCompatActivity() {
             val lo = it.child("str4").value
             location.text=lo.toString()
         }
+        search=findViewById(R.id.image)
+        scroll=findViewById(R.id.scrollView)
     }
 }
