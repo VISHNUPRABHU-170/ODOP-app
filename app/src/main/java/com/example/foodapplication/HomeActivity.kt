@@ -29,6 +29,21 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var search: ImageView
     private lateinit var scroll: ScrollView
     private lateinit var d1: Button
+    private lateinit var img1: ImageView
+    private lateinit var img2: ImageView
+    private lateinit var img3: ImageView
+    private lateinit var img4: ImageView
+    private lateinit var img5: ImageView
+    private lateinit var img6: ImageView
+    private lateinit var img7: ImageView
+    private lateinit var img8: ImageView
+    private lateinit var img9: ImageView
+    private lateinit var img10: ImageView
+    private lateinit var img11: ImageView
+    private lateinit var img12: ImageView
+    private lateinit var img13: ImageView
+    private lateinit var img14: ImageView
+    private lateinit var img15: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
@@ -63,6 +78,81 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, CoimbatoreActivity::class.java))
         }
 
+        img1.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img2.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img3.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img4.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img5.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img6.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img7.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img8.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img9.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img10.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img11.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img12.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img13.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img14.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        img15.setOnClickListener(){
+            val intent = Intent(this,BuyActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
@@ -82,5 +172,20 @@ class HomeActivity : AppCompatActivity() {
         search=findViewById(R.id.image)
         scroll=findViewById(R.id.scrollView)
         d1=findViewById(R.id.d1)
+        img1=findViewById(R.id.image1)
+        img2=findViewById(R.id.image2)
+        img3=findViewById(R.id.image3)
+        img4=findViewById(R.id.image4)
+        img5=findViewById(R.id.image5)
+        img6=findViewById(R.id.image6)
+        img7=findViewById(R.id.image7)
+        img8=findViewById(R.id.image8)
+        img9=findViewById(R.id.image9)
+        img10=findViewById(R.id.image10)
+        img11=findViewById(R.id.image11)
+        img12=findViewById(R.id.image12)
+        img13=findViewById(R.id.image13)
+        img14=findViewById(R.id.image14)
+        img15=findViewById(R.id.image15)
     }
 }

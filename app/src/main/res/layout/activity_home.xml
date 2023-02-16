@@ -182,7 +182,7 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="604dp"
+        android:layout_height="638dp"
         android:layout_marginTop="16dp"
         android:background="@color/white"
         android:orientation="horizontal"
@@ -238,7 +238,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/material_dynamic_neutral_variant70"
                     android:backgroundTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -257,7 +257,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView1"
+                    android:id="@+id/image1"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="30dp"
@@ -267,7 +267,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/image2"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -277,7 +277,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/image3"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -297,7 +297,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView33"
+                    android:id="@+id/image4"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="30dp"
@@ -307,7 +307,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/image5"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -317,7 +317,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/image6"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -336,7 +336,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/image7"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="30dp"
@@ -347,7 +347,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/image8"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -357,7 +357,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/image9"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -375,7 +375,7 @@
                 android:layout_marginTop="40dp">
 
                 <ImageView
-                    android:id="@+id/imageView1111"
+                    android:id="@+id/image10"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="30dp"
@@ -385,7 +385,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView111"
+                    android:id="@+id/image11"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -395,7 +395,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView112"
+                    android:id="@+id/image12"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -416,7 +416,7 @@
                 android:layout_marginTop="40dp">
 
                 <ImageView
-                    android:id="@+id/imageView113"
+                    android:id="@+id/image13"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="30dp"
@@ -426,7 +426,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView114"
+                    android:id="@+id/image14"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -436,7 +436,7 @@
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
-                    android:id="@+id/imageView115"
+                    android:id="@+id/image15"
                     android:layout_width="85dp"
                     android:layout_height="80dp"
                     android:layout_marginStart="40dp"
@@ -459,7 +459,7 @@
 
                 <View
                     android:id="@+id/divider26"
-                    android:layout_width="140dp"
+                    android:layout_width="120dp"
                     android:layout_height="1dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="0dp"
@@ -474,12 +474,12 @@
 
                 <TextView
                     android:id="@+id/textView29"
-                    android:layout_width="108dp"
+                    android:layout_width="150dp"
                     android:layout_height="20dp"
-                    android:layout_marginStart="0dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="12dp"
                     android:background="@color/white"
-                    android:text="    Districts"
+                    android:text="Search by Districts"
                     android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -502,6 +502,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.193" />
+
+
 
             </LinearLayout>
 
