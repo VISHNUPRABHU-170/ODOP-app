@@ -4,142 +4,203 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".district.Tirupur">
+    tools:context=".district.TirupurActivity">
 
-    <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="260dp"
-        android:background="@color/material_dynamic_neutral95"
-        android:orientation="horizontal"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:text="Tirupur"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286">
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.023" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="740dp"
+        android:background="@color/material_dynamic_neutral95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                app:srcCompat="@drawable/t_shirt_1" />
 
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/groundnut_oil_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_c6a4634_430x520_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
-
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_1or4b1jrfs__sx522__removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/edible_oil_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/dhal_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:orientation="horizontal">
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="10dp"
+                android:text="T - SHIRT"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_17tlsghg8l__sl1500__removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/material_dynamic_secondary70"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.734"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
-                <ImageView
-                    android:id="@+id/imageView9"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/indian_cashews_nuts_w300_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/t_shirt_2" />
 
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/iyal_5l_cold_pressed_coconut_oil_1655703678_6402960_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="10dp"
+                android:text="T - SHIRT"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/lemon_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/material_dynamic_secondary70"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.734"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="75dp"
-                    android:layout_height="65dp"
-                    android:layout_marginStart="40dp"
-                    android:background="@drawable/background"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/palm_removebg_preview"
-                    tools:layout_editor_absoluteX="260dp" />
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/pant" />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="10dp"
+                android:text="KNITWEAR PANT"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/material_dynamic_secondary70"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.734"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/shorts" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="-30dp"
+                android:text="SHORTS"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/material_dynamic_secondary70"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.734"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/shirts" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="0dp"
+                android:text="SHIRTS"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/material_dynamic_secondary70"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.734"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
 
         </LinearLayout>
 

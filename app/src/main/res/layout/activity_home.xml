@@ -263,7 +263,7 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/groundnut_oil_removebg_preview"
+                    app:srcCompat="@drawable/groundnut_oil"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -273,7 +273,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_c6a4634_430x520_removebg_preview"
+                    app:srcCompat="@drawable/silksaree"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -283,7 +283,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/iyal_5l_cold_pressed_coconut_oil_1655703678_6402960_removebg_preview"
+                    app:srcCompat="@drawable/coconut_oil"
                     tools:layout_editor_absoluteX="260dp" />
 
 
@@ -303,7 +303,7 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_1or4b1jrfs__sx522__removebg_preview"
+                    app:srcCompat="@drawable/turmericpowder"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -313,7 +313,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/indian_cashews_nuts_w300_removebg_preview"
+                    app:srcCompat="@drawable/cashews_nuts"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -342,7 +342,7 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/palm_removebg_preview"
+                    app:srcCompat="@drawable/palm"
                     tools:layout_editor_absoluteX="260dp" />
 
 
@@ -353,7 +353,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/edible_oil_removebg_preview"
+                    app:srcCompat="@drawable/edible_oil"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -363,7 +363,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/dhal_removebg_preview"
+                    app:srcCompat="@drawable/dhal"
                     tools:layout_editor_absoluteX="260dp" />
 
             </LinearLayout>
@@ -381,7 +381,7 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/_17tlsghg8l__sl1500__removebg_preview"
+                    app:srcCompat="@drawable/millet"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -391,7 +391,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/mango_removebg_preview"
+                    app:srcCompat="@drawable/mango"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -401,7 +401,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/moringa_removebg_preview"
+                    app:srcCompat="@drawable/moringa"
                     tools:layout_editor_absoluteX="260dp" />
 
 
@@ -422,7 +422,7 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/tapioca_removebg_preview"
+                    app:srcCompat="@drawable/tapioca"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -432,7 +432,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/palkova_removebg_preview"
+                    app:srcCompat="@drawable/palkova"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -442,7 +442,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/port_removebg_preview__1_"
+                    app:srcCompat="@drawable/port"
                     tools:layout_editor_absoluteX="260dp" />
 
 

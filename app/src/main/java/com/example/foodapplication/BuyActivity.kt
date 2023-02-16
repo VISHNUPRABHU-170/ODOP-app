@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import com.example.foodapplication.cart.CartActivity
 
 class BuyActivity : AppCompatActivity() {
@@ -26,6 +28,15 @@ class BuyActivity : AppCompatActivity() {
             val intent = Intent(this,CartActivity::class.java)
             startActivity(intent)
         }
+        val img: ImageView = findViewById(R.id.img)
+        val text: TextView = findViewById(R.id.name)
+        val str: String
+        val bundle: Bundle = intent.extras!!
+        val resId: Int = bundle.getInt("pic")
+        val intent = intent
+        str=intent.getStringExtra("name").toString()
+        text.text=str
+        img.setImageResource(resId)
     }
 
     private fun init(){

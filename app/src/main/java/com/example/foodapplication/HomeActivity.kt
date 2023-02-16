@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.foodapplication.cart.CartActivity
 import com.example.foodapplication.district.CoimbatoreActivity
+import com.example.foodapplication.district.TirupurActivity
 import com.example.foodapplication.notification.NotificationActivity
 import com.example.foodapplication.profile.ProfileActivity
 import com.example.foodapplication.search.SearchActivity
@@ -29,6 +30,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var search: ImageView
     private lateinit var scroll: ScrollView
     private lateinit var d1: Button
+    private lateinit var d2: Button
     private lateinit var img1: ImageView
     private lateinit var img2: ImageView
     private lateinit var img3: ImageView
@@ -78,13 +80,21 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, CoimbatoreActivity::class.java))
         }
 
+        d2.setOnClickListener(){
+            startActivity(Intent(this, TirupurActivity::class.java))
+        }
+
         img1.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this@HomeActivity,BuyActivity::class.java)
+            intent.putExtra("pic",R.drawable.groundnut_oil)
+            intent.putExtra("name","Groundnut Oil")
             startActivity(intent)
         }
 
         img2.setOnClickListener(){
             val intent = Intent(this,BuyActivity::class.java)
+            intent.putExtra("pic",R.drawable.groundnut_oil)
+            intent.putExtra("name","Groundnut Oil")
             startActivity(intent)
         }
 
@@ -172,6 +182,7 @@ class HomeActivity : AppCompatActivity() {
         search=findViewById(R.id.image)
         scroll=findViewById(R.id.scrollView)
         d1=findViewById(R.id.d1)
+        d2=findViewById(R.id.d2)
         img1=findViewById(R.id.image1)
         img2=findViewById(R.id.image2)
         img3=findViewById(R.id.image3)

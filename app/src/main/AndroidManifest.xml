@@ -15,7 +15,7 @@
             android:name=".BuyActivity"
             android:exported="false" />
         <activity
-            android:name=".Tirupur"
+            android:name=".district.TirupurActivity"
             android:exported="false" />
         <activity
             android:name=".OrderActivity"
