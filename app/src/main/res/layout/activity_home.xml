@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/homeback"
     tools:context=".HomeActivity">
 
 
     <ImageView
         android:id="@+id/profile"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.364"
@@ -20,36 +20,11 @@
         app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/user_icon_removebg_preview" />
 
-    <TextView
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="search for District"
-        android:textColor="@color/material_dynamic_neutral60"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/divider2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04000002" />
-
-    <ImageView
-        android:id="@+id/imageView90"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:srcCompat="@drawable/search_icon" />
 
     <ImageView
         android:id="@+id/cart"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.813"
@@ -60,8 +35,8 @@
 
     <ImageView
         android:id="@+id/home"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profile"
@@ -73,8 +48,8 @@
 
     <ImageView
         android:id="@+id/notification"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.625"
@@ -83,52 +58,25 @@
         app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/notificationicon" />
 
-    <View
-        android:id="@+id/divider5"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/material_dynamic_neutral_variant70"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934" />
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="1dp"
-        android:layout_height="54dp"
-        android:background="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
+
 
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="42dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099"
+        app:layout_constraintVertical_bias="0.131"
         app:srcCompat="@drawable/location_icon" />
 
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="1dp"
-        android:layout_height="54dp"
-        android:background="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.258"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delivery to -"
@@ -136,65 +84,29 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.14" />
 
-    <TextView
-        android:id="@+id/address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="                                     "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/divider3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
-
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="1dp"
-        android:layout_height="54dp"
-        android:background="@color/material_dynamic_neutral50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.734"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="336dp"
-        android:layout_height="51dp"
-        android:background="@drawable/border"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="638dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="625dp"
         android:background="@color/white"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/divider2"
-        app:layout_constraintTop_toBottomOf="@+id/address"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-50dp">
+        app:layout_constraintBottom_toTopOf="@+id/notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.90">
 
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="625dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -206,8 +118,8 @@
                     android:id="@+id/divider"
                     android:layout_width="135dp"
                     android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
                     android:background="@color/material_dynamic_neutral_variant70"
                     android:backgroundTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -237,8 +149,8 @@
                     android:id="@+id/divider8"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
                     android:background="@color/material_dynamic_neutral_variant70"
                     android:backgroundTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -313,7 +225,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:srcCompat="@drawable/cashews_nuts"
+                    app:srcCompat="@drawable/cashew_nuts"
                     tools:layout_editor_absoluteX="260dp" />
 
                 <ImageView
@@ -371,8 +283,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/image10"
@@ -405,15 +317,13 @@
                     tools:layout_editor_absoluteX="260dp" />
 
 
-
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/image13"
@@ -446,23 +356,21 @@
                     tools:layout_editor_absoluteX="260dp" />
 
 
-
-
             </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="40dp">
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
 
                 <View
                     android:id="@+id/divider26"
                     android:layout_width="120dp"
                     android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
                     android:background="@color/material_dynamic_neutral_variant70"
                     android:backgroundTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -492,8 +400,8 @@
                     android:id="@+id/divider81"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginStart="-10dp"
+                    android:layout_marginTop="20dp"
                     android:background="@color/material_dynamic_neutral_variant70"
                     android:backgroundTint="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -502,7 +410,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.193" />
-
 
 
             </LinearLayout>
@@ -574,7 +481,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="30dp"
                     android:background="@color/material_dynamic_primary20"
-                    android:text="Button"
+                    android:text="Tirunelveli"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.49"
@@ -596,7 +503,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="30dp"
                     android:background="@color/material_dynamic_primary50"
-                    android:text="Button"
+                    android:text="Chengalpattu"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.49"
@@ -610,7 +517,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="30dp"
                     android:background="@color/material_dynamic_primary80"
-                    android:text="Button"
+                    android:text="Ariyalur"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.49"
@@ -805,7 +712,35 @@
 
     </ScrollView>
 
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="362dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rectwithradius"
+        android:ems="10"
+        android:hint="             search for districts"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/material_dynamic_neutral40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411"
+        app:srcCompat="@drawable/search_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

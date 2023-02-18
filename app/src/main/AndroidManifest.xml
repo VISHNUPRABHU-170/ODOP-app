@@ -12,6 +12,18 @@
         android:theme="@style/Theme.FOODAPPLICATION"
         tools:targetApi="31">
         <activity
+            android:name=".district.ChengalpattuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.AriyalurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TirunelveliActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.ChennaiActivity"
+            android:exported="false" />
+        <activity
             android:name=".BuyActivity"
             android:exported="false" />
         <activity

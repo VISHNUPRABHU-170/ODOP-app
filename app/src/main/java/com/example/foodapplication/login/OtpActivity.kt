@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import com.example.foodapplication.HomeActivity
 import com.example.foodapplication.R
@@ -28,17 +30,19 @@ class OtpActivity : AppCompatActivity() {
     private lateinit var typedOTP: String
     private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
     private lateinit var Number: String
+    private lateinit var numshow: TextView
+    private lateinit var back: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp)
         supportActionBar?.hide()
 
+        init()
         OTP=intent.getStringExtra("OTP").toString()
         resendToken=intent.getParcelableExtra("resendToken")!!
         Number=intent.getStringExtra("phoneNumber")!!
-
-        init()
+        numshow.text="Please enter the code send to ${Number}"
 
         go.setOnClickListener(){
             typedOTP=otp1.text.toString()+otp2.text.toString()+otp3.text.toString()+otp4.text.toString()+otp5.text.toString()+otp6.text.toString()
@@ -56,7 +60,10 @@ class OtpActivity : AppCompatActivity() {
             resendVerificationCode()
         }
 
-
+        back.setOnClickListener(){
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun init(){
@@ -69,6 +76,8 @@ class OtpActivity : AppCompatActivity() {
         otp6=findViewById(R.id.otp6)
         resend=findViewById(R.id.resend)
         auth=FirebaseAuth.getInstance()
+        numshow=findViewById(R.id.text)
+        back=findViewById(R.id.backicon)
     }
 
     private fun sendToMain(){

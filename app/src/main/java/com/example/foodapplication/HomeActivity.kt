@@ -3,13 +3,13 @@ package com.example.foodapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.foodapplication.cart.CartActivity
-import com.example.foodapplication.district.CoimbatoreActivity
-import com.example.foodapplication.district.TirupurActivity
+import com.example.foodapplication.district.*
 import com.example.foodapplication.notification.NotificationActivity
 import com.example.foodapplication.profile.ProfileActivity
 import com.example.foodapplication.search.SearchActivity
@@ -27,10 +27,14 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var dbRef: DatabaseReference
     private lateinit var uid: String
-    private lateinit var search: ImageView
+    private lateinit var search: EditText
     private lateinit var scroll: ScrollView
     private lateinit var d1: Button
     private lateinit var d2: Button
+    private lateinit var d3: Button
+    private lateinit var d4: Button
+    private lateinit var d5: Button
+    private lateinit var d6: Button
     private lateinit var img1: ImageView
     private lateinit var img2: ImageView
     private lateinit var img3: ImageView
@@ -73,7 +77,8 @@ class HomeActivity : AppCompatActivity() {
         }
 
         search.setOnClickListener(){
-            startActivity(Intent(this, SearchActivity::class.java))
+            val intent=Intent(this,SearchActivity::class.java)
+            startActivity(intent)
         }
 
         d1.setOnClickListener(){
@@ -82,6 +87,22 @@ class HomeActivity : AppCompatActivity() {
 
         d2.setOnClickListener(){
             startActivity(Intent(this, TirupurActivity::class.java))
+        }
+
+        d3.setOnClickListener(){
+            startActivity(Intent(this, ChennaiActivity::class.java))
+        }
+
+        d4.setOnClickListener(){
+            startActivity(Intent(this, TirunelveliActivity::class.java))
+        }
+
+        d5.setOnClickListener(){
+            startActivity(Intent(this, ChengalpattuActivity::class.java))
+        }
+
+        d6.setOnClickListener(){
+            startActivity(Intent(this, AriyalurActivity::class.java))
         }
 
         img1.setOnClickListener(){
@@ -171,18 +192,23 @@ class HomeActivity : AppCompatActivity() {
         notification=findViewById(R.id.notification)
         cart=findViewById(R.id.cart)
         home=findViewById(R.id.home)
-        location=findViewById(R.id.address)
+        location=findViewById(R.id.location)
         auth= FirebaseAuth.getInstance()
+        search=findViewById(R.id.search)
         dbRef=FirebaseDatabase.getInstance().getReference("User Information")
         val uid=auth.currentUser?.uid.toString()
         dbRef.child(uid).get().addOnSuccessListener {
             val lo = it.child("str4").value
-            location.text=lo.toString()
+            location.text="Delivery to - ${lo.toString()}"
         }
-        search=findViewById(R.id.image)
+
         scroll=findViewById(R.id.scrollView)
         d1=findViewById(R.id.d1)
         d2=findViewById(R.id.d2)
+        d3=findViewById(R.id.d3)
+        d4=findViewById(R.id.d4)
+        d5=findViewById(R.id.d5)
+        d6=findViewById(R.id.d6)
         img1=findViewById(R.id.image1)
         img2=findViewById(R.id.image2)
         img3=findViewById(R.id.image3)

@@ -7,95 +7,33 @@
     android:background="@color/white"
     tools:context=".login.OtpActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:background="@color/material_dynamic_neutral_variant90"
-        android:text="                 "
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="24dp"
+        android:text="Please enter the code send to "
+        android:textColor="@color/material_dynamic_neutral_variant40"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/go"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="Continue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/otp6"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
         app:layout_constraintStart_toStartOf="@+id/otp1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginEnd="90dp"
-        android:text="Verification"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/resend"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="196dp"
-        android:text="Resend"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/otp6"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.518" />
 
     <EditText
         android:id="@+id/otp1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
+        android:layout_marginTop="390dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.120"
@@ -107,13 +45,14 @@
         android:id="@+id/otp2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
+        android:layout_marginTop="390dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.270"
@@ -125,11 +64,12 @@
         android:id="@+id/otp3"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
         android:textColor="@color/black"
+        android:layout_marginTop="390dp"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +83,8 @@
         android:id="@+id/otp4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:layout_marginTop="390dp"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
@@ -161,9 +102,10 @@
         android:id="@+id/otp5"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
+        android:layout_marginTop="390dp"
         android:inputType="numberSigned"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
@@ -179,7 +121,8 @@
         android:id="@+id/otp6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/border"
+        android:layout_marginTop="390dp"
+        android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
@@ -192,6 +135,82 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.226" />
+
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="318dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:text="VERIFY PHONE NUMBER"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="93dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:text="Resend"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/go"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/go"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <ImageView
+        android:id="@+id/backicon"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/back_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="263dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/verifyicon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
