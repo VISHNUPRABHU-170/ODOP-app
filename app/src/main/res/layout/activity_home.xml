@@ -109,63 +109,31 @@
             android:layout_height="625dp"
             android:orientation="vertical">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="370dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/rectwithradiusred"
+                tools:layout_editor_absoluteX="72dp" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="-80dp"
+                android:layout_marginStart="110dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <View
-                    android:id="@+id/divider"
-                    android:layout_width="135dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/material_dynamic_neutral_variant70"
-                    android:backgroundTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.193" />
-
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="108dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@color/white"
-                    android:text="  Offers for you"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.496"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.186" />
-
-                <View
-                    android:id="@+id/divider8"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/material_dynamic_neutral_variant70"
-                    android:backgroundTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.193" />
-
-            </LinearLayout>
+                android:text="OFFERS FOR YOU" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="100dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -289,7 +257,7 @@
                 <ImageView
                     android:id="@+id/image10"
                     android:layout_width="85dp"
-                    android:layout_height="80dp"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="30dp"
                     android:background="@drawable/background"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -359,74 +327,41 @@
             </LinearLayout>
 
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageView211"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="370dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/rectwithradiusdarkblue"
+                tools:layout_editor_absoluteX="72dp" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="-80dp"
+                android:layout_marginStart="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:orientation="horizontal">
-
-                <View
-                    android:id="@+id/divider26"
-                    android:layout_width="120dp"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/material_dynamic_neutral_variant70"
-                    android:backgroundTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.193" />
-
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="150dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@color/white"
-                    android:text="Search by Districts"
-                    android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.496"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.186" />
-
-                <View
-                    android:id="@+id/divider81"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginStart="-10dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/material_dynamic_neutral_variant70"
-                    android:backgroundTint="@color/black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.193" />
-
-
-            </LinearLayout>
+                android:text="SEARCH BY DISTRICTS" />
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/d1"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/design_default_color_secondary"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/white"
                     android:text="Coimbatore"
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -438,10 +373,11 @@
 
                 <Button
                     android:id="@+id/d2"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@android:color/holo_orange_dark"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
                     android:text="Tirupur"
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -451,23 +387,15 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d3"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/design_default_color_primary"
-                    android:text="Chennai"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
                     android:textColor="@color/white"
+                    android:text="Chennai"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.49"
@@ -477,10 +405,12 @@
 
                 <Button
                     android:id="@+id/d4"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_primary20"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Tirunelveli"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -489,20 +419,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d5"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_primary50"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Chengalpattu"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -513,10 +437,12 @@
 
                 <Button
                     android:id="@+id/d6"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_primary80"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Ariyalur"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -525,20 +451,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d7"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_neutral90"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -549,10 +469,12 @@
 
                 <Button
                     android:id="@+id/d8"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_tertiary40"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -561,20 +483,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d9"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@android:color/holo_green_light"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -585,10 +501,12 @@
 
                 <Button
                     android:id="@+id/d10"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="?android:attr/colorMultiSelectHighlight"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -597,20 +515,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d11"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@android:color/holo_orange_light"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -621,10 +533,12 @@
 
                 <Button
                     android:id="@+id/d12"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_primary80"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -633,20 +547,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d13"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_secondary40"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -657,10 +565,12 @@
 
                 <Button
                     android:id="@+id/d14"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_tertiary40"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -669,20 +579,14 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/d15"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/material_dynamic_neutral20"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -693,10 +597,12 @@
 
                 <Button
                     android:id="@+id/d16"
-                    android:layout_width="150dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="30dp"
-                    android:background="@android:color/holo_blue_dark"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white"
+                    android:textColor="@color/white"
                     android:text="Button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -704,6 +610,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.023" />
+
 
             </LinearLayout>
 
@@ -741,6 +648,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.411"
         app:srcCompat="@drawable/search_icon" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

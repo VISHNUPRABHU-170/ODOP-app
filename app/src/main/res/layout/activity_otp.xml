@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/otp_back"
     tools:context=".login.OtpActivity">
 
 
@@ -18,14 +18,16 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="@+id/otp1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.577" />
 
     <EditText
         android:id="@+id/otp1"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
@@ -33,7 +35,6 @@
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
-        android:layout_marginTop="390dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.120"
@@ -45,6 +46,7 @@
         android:id="@+id/otp2"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
@@ -52,7 +54,6 @@
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
-        android:layout_marginTop="390dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.270"
@@ -64,12 +65,12 @@
         android:id="@+id/otp3"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
         android:inputType="numberSigned"
         android:textColor="@color/black"
-        android:layout_marginTop="390dp"
         android:textColorHint="@color/material_dynamic_neutral30"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +84,7 @@
         android:id="@+id/otp4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
@@ -102,10 +103,10 @@
         android:id="@+id/otp5"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
-        android:layout_marginTop="390dp"
         android:inputType="numberSigned"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral30"
@@ -121,7 +122,7 @@
         android:id="@+id/otp6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="430dp"
         android:background="@color/material_dynamic_primary90"
         android:ems="10"
         android:hint="  0"
@@ -149,10 +150,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.926" />
 
     <TextView
         android:id="@+id/textView25"
@@ -166,10 +167,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.148" />
 
     <Button
         android:id="@+id/resend"
@@ -181,10 +182,10 @@
         android:textColor="@android:color/holo_blue_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/go"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/go"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.811" />
 
     <ImageView
         android:id="@+id/backicon"
@@ -206,10 +207,10 @@
         android:layout_marginEnd="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
+        app:layout_constraintVertical_bias="0.335"
         app:srcCompat="@drawable/verifyicon" />
 
 

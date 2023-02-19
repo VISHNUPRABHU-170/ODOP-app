@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.foodapplication.HomeActivity
 import com.example.foodapplication.R
 import com.example.foodapplication.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -23,6 +25,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var number : TextView
     private lateinit var mailid: TextView
     private lateinit var location: TextView
+    private lateinit var back: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
@@ -43,6 +46,11 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 
+        back.setOnClickListener(){
+            val intent = Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
     private fun init(){
@@ -54,6 +62,7 @@ class ProfileActivity : AppCompatActivity() {
         number=findViewById(R.id.number)
         location=findViewById(R.id.address)
         mailid=findViewById(R.id.mailid)
+        back=findViewById(R.id.backicon)
     }
 
     private fun readData(uid: String){

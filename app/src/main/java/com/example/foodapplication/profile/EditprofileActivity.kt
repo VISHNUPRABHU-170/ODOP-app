@@ -1,9 +1,11 @@
 package com.example.foodapplication.profile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.foodapplication.R
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +21,7 @@ class EditprofileActivity : AppCompatActivity() {
     private lateinit var save: Button
     private lateinit var auth: FirebaseAuth
     private lateinit var uid: String
+    private lateinit var back: ImageView
 
     private lateinit var dbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,18 +29,28 @@ class EditprofileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_editprofile)
 
-        name=findViewById(R.id.name)
-        number=findViewById(R.id.number)
-        mailid=findViewById(R.id.mailid)
-        location=findViewById(R.id.address)
-        save=findViewById(R.id.save)
-        auth=FirebaseAuth.getInstance()
+        init()
 
         dbRef=FirebaseDatabase.getInstance().getReference("User Information")
 
         save.setOnClickListener(){
             savedata()
         }
+
+        back.setOnClickListener(){
+            val intent = Intent(this,ProfileActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun init(){
+        name=findViewById(R.id.name)
+        number=findViewById(R.id.number)
+        mailid=findViewById(R.id.mailid)
+        location=findViewById(R.id.address)
+        save=findViewById(R.id.save)
+        auth=FirebaseAuth.getInstance()
+        back=findViewById(R.id.backicon)
     }
 
     private fun savedata(){

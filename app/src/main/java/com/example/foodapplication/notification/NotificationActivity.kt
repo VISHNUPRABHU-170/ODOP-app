@@ -61,6 +61,7 @@ class NotificationActivity : AppCompatActivity() {
             t2.visibility=View.INVISIBLE
             gohome.visibility=View.INVISIBLE
             display.text=str.toString()
+            display.visibility=View.VISIBLE
         }
 
     }
@@ -75,5 +76,6 @@ class NotificationActivity : AppCompatActivity() {
         t1=findViewById(R.id.text1)
         t2=findViewById(R.id.text2)
         display=findViewById(R.id.display)
+        display.visibility=View.INVISIBLE
     }
 }
