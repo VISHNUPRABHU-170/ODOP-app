@@ -106,7 +106,7 @@
         android:id="@+id/gohome"
         android:layout_width="172dp"
         android:layout_height="40dp"
-        android:background="@android:color/holo_green_light"
+        android:background="#474CD3"
         android:text="Continue Shopping"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

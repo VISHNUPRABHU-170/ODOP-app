@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".district.CoimbatoreActivity" >
+    tools:context=".district.TiruppurActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -23,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
         android:layout_marginEnd="90dp"
-        android:text="Coimbatore"
+        android:text="Tirupur"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,8 +51,8 @@
                 android:layout_width="300dp"
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="0dp"
-                app:srcCompat="@drawable/silk_sarees" />
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/t_shirt_1" />
 
             <TextView
                 android:id="@+id/textView24"
@@ -61,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="160dp"
                 android:layout_marginTop="10dp"
-                android:text="SILK SAREES"
+                android:text="T - SHIRT"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -84,15 +83,15 @@
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/palm" />
+                app:srcCompat="@drawable/t_shirt_2" />
 
             <TextView
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
+                android:layout_marginStart="160dp"
                 android:layout_marginTop="10dp"
-                android:text="PALM"
+                android:text="T - SHIRT"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -115,15 +114,15 @@
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/motor" />
+                app:srcCompat="@drawable/pant" />
 
             <TextView
                 android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="130dp"
                 android:layout_marginTop="10dp"
-                android:text="MOTORS"
+                android:text="KNITWEAR PANT"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -145,16 +144,16 @@
                 android:layout_width="300dp"
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/car_parts" />
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/shorts" />
 
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="170dp"
                 android:layout_marginTop="-30dp"
-                android:text="CAR PARTS"
+                android:text="SHORTS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -177,15 +176,15 @@
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="40dp"
-                app:srcCompat="@drawable/automative_components" />
+                app:srcCompat="@drawable/shirts" />
 
             <TextView
                 android:id="@+id/textView28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
+                android:layout_marginStart="160dp"
                 android:layout_marginTop="0dp"
-                android:text="AUTOMATIVE COMPONENTS"
+                android:text="SHIRTS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 

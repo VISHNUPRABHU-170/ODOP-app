@@ -7,7 +7,7 @@ import android.widget.ImageView
 import com.example.foodapplication.BuyActivity
 import com.example.foodapplication.R
 
-class TirupurActivity : AppCompatActivity() {
+class TiruppurActivity : AppCompatActivity() {
     private lateinit var tshirt1: ImageView
     private lateinit var tshirt2: ImageView
     private lateinit var shorts: ImageView
@@ -16,7 +16,7 @@ class TirupurActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tirupur)
+        setContentView(R.layout.activity_tiruppur)
         init()
 
         tshirt1.setOnClickListener(){

@@ -355,261 +355,1043 @@
 
                 android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/d1"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
                     android:layout_marginTop="100dp"
-                    android:background="@drawable/white"
-                    android:text="Coimbatore"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    android:orientation="vertical"
+                    android:background="#363BC3">
 
-                <Button
-                    android:id="@+id/d2"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:text="Tirupur"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <ImageView
+                        android:id="@+id/imgd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/silk_sarees" />
 
-                <Button
-                    android:id="@+id/d3"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Chennai"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="COIMBATORE"/>
 
-                <Button
-                    android:id="@+id/d4"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Tirunelveli"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/d5"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Chengalpattu"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                <LinearLayout
 
-                <Button
-                    android:id="@+id/d6"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Ariyalur"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
 
-                <Button
-                    android:id="@+id/d7"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <ImageView
+                        android:id="@+id/imgd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/t_shirt_1" />
 
-                <Button
-                    android:id="@+id/d8"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TIRUPUR"/>
 
-                <Button
-                    android:id="@+id/d9"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/d10"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                <LinearLayout
 
-                <Button
-                    android:id="@+id/d11"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
 
-                <Button
-                    android:id="@+id/d12"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <ImageView
+                        android:id="@+id/imgd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/halwa" />
 
-                <Button
-                    android:id="@+id/d13"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TIRUNELVELI"/>
 
-                <Button
-                    android:id="@+id/d14"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                </LinearLayout>
 
-                <Button
-                    android:id="@+id/d15"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                <LinearLayout
 
-                <Button
-                    android:id="@+id/d16"
-                    android:layout_width="350dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/white"
-                    android:textColor="@color/white"
-                    android:text="Button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023" />
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd4"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/automobile_accessiors" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="CHENNAI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd5"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="CHENGALPATTU"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd6"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="ARIYALUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd7"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="CUDDALORE"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd8"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="DHARMAPURI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd9"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="DINDIGUL"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd10"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="ERODE"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd11"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="KALLAKURICHI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd12"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="KANCHEEPURAM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd13"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="KARUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd14"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="KANYAKUMARI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd15"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="KRISHNAGIRI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd16"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="MADURAI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd17"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="NAGAPPATTINAM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd18"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="NAMAKKAL"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd19"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="Nilgiris"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd20"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="PERAMBULUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd21"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="PUDUKKOTTAI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd22"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="RAMANATHAPURAM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd23"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="RANIPET"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd24"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="SALEM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd25"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="SIVAGANGAI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd26"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TENKASI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd27"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="THANJAVUR"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd28"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="THENI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd29"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="THIRUVALLUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd30"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="THOOTHUKUDI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd31"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TIRUPPATHUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd32"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TIRUVANNAMALAI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd33"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TIRUVARUR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd34"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="TRICHY"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd35"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="VELLORE"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd36"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="VILLUPURAM"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:background="#363BC3">
+
+                    <ImageView
+                        android:id="@+id/imgd37"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#D6D8E4"
+                        app:srcCompat="@drawable/cashew_nuts" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="90dp"
+                        android:text="VIRUDHUNAGAR"/>
+
+                </LinearLayout>
 
 
             </LinearLayout>

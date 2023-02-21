@@ -12,6 +12,99 @@
         android:theme="@style/Theme.FOODAPPLICATION"
         tools:targetApi="31">
         <activity
+            android:name=".district.VirudhunagarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.VillupuramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.VelloreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TrichyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TiruvarurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TiruvannamalaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TiruppathurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.ThoothukudiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.ThiruvallurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TheniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.NilgirisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.ThanjavurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.TenkasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.SivagangaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.SalemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.RanipetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.RamanathapuramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.PudukkottaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.PerambalurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.NamakkalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.NagappattinamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.MaduraiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.KrishnagiriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.KarurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.KanyakumariActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.KancheepuramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.KallakurichiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.ErodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.DindigulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.DharmapuriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".district.CuddaloreActivity"
+            android:exported="false" />
+        <activity
             android:name=".district.ChengalpattuActivity"
             android:exported="false" />
         <activity
@@ -27,7 +120,7 @@
             android:name=".BuyActivity"
             android:exported="false" />
         <activity
-            android:name=".district.TirupurActivity"
+            android:name=".district.TiruppurActivity"
             android:exported="false" />
         <activity
             android:name=".OrderActivity"

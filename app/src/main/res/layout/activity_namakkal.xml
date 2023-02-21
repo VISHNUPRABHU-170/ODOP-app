@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".district.CoimbatoreActivity" >
+    tools:context=".district.NamakkalActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -23,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
         android:layout_marginEnd="90dp"
-        android:text="Coimbatore"
+        android:text="NAMAKKAL"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
