@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import com.example.foodapplication.HomeActivity
-import com.example.foodapplication.notification.NotificationActivity
+import com.example.foodapplication.district.DistrictActivity
 import com.example.foodapplication.R
 import com.example.foodapplication.profile.ProfileActivity
 
 class CartActivity : AppCompatActivity() {
     private lateinit var profile: ImageView
-    private lateinit var notification: ImageView
+    private lateinit var district: ImageView
     private lateinit var cart: ImageView
     private lateinit var home: ImageView
     private lateinit var gohome: Button
@@ -28,8 +28,8 @@ class CartActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        notification.setOnClickListener(){
-            val intent=Intent(this, NotificationActivity::class.java)
+        district.setOnClickListener(){
+            val intent=Intent(this, DistrictActivity::class.java)
             startActivity(intent)
         }
 
@@ -51,7 +51,7 @@ class CartActivity : AppCompatActivity() {
 
     private fun init() {
         profile = findViewById(R.id.profile)
-        notification = findViewById(R.id.notification)
+        district = findViewById(R.id.notification)
         cart = findViewById(R.id.cart)
         home = findViewById(R.id.home)
         gohome=findViewById(R.id.gohome)

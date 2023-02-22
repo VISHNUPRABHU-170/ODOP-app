@@ -1,4 +1,4 @@
-package com.example.foodapplication.notification
+package com.example.foodapplication.district
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,9 +12,9 @@ import com.example.foodapplication.R
 import com.example.foodapplication.cart.CartActivity
 import com.example.foodapplication.profile.ProfileActivity
 
-class NotificationActivity : AppCompatActivity() {
+class DistrictActivity : AppCompatActivity() {
     private lateinit var profile: ImageView
-    private lateinit var notification: ImageView
+    private lateinit var district: ImageView
     private lateinit var cart: ImageView
     private lateinit var home: ImageView
     private lateinit var gohome: Button
@@ -25,7 +25,7 @@ class NotificationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_notification)
+        setContentView(R.layout.activity_district)
         supportActionBar?.hide()
 
         init()
@@ -35,8 +35,8 @@ class NotificationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        notification.setOnClickListener(){
-            val intent=Intent(this, NotificationActivity::class.java)
+        district.setOnClickListener(){
+            val intent=Intent(this, DistrictActivity::class.java)
             startActivity(intent)
         }
 
@@ -50,32 +50,23 @@ class NotificationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        gohome.setOnClickListener(){
-            startActivity(Intent(this, HomeActivity::class.java))
-        }
+
 
         val str=intent.getStringExtra("message")
         if(str.toString().equals("Your Order has Successfully Completed")){
             image.visibility= View.INVISIBLE
             t1.visibility=View.INVISIBLE
             t2.visibility=View.INVISIBLE
-            gohome.visibility=View.INVISIBLE
-            display.text=str.toString()
-            display.visibility=View.VISIBLE
+
         }
 
     }
 
     private fun init() {
         profile = findViewById(R.id.profile)
-        notification = findViewById(R.id.notification)
+        district = findViewById(R.id.district)
         cart = findViewById(R.id.cart)
         home = findViewById(R.id.home)
-        gohome=findViewById(R.id.gohome)
-        image=findViewById(R.id.image)
-        t1=findViewById(R.id.text1)
-        t2=findViewById(R.id.text2)
-        display=findViewById(R.id.display)
-        display.visibility=View.INVISIBLE
+
     }
 }

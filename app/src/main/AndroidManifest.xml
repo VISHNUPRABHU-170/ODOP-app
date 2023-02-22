@@ -141,7 +141,7 @@
             android:name=".profile.EditprofileActivity"
             android:exported="false" />
         <activity
-            android:name=".notification.NotificationActivity"
+            android:name=".district.DistrictActivity"
             android:exported="false" />
         <activity
             android:name=".cart.CartActivity"

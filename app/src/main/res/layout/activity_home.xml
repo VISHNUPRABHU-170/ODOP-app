@@ -7,19 +7,30 @@
     android:background="@drawable/homeback"
     tools:context=".HomeActivity">
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="130dp"
+        android:layout_height="5dp"
+        android:background="#363BC3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
 
     <ImageView
         android:id="@+id/profile"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988"
+        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/user_icon_removebg_preview" />
-
 
     <ImageView
         android:id="@+id/cart"
@@ -27,8 +38,8 @@
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toEndOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toEndOf="@+id/district"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/cart_icon" />
@@ -39,27 +50,24 @@
         android:layout_height="30dp"
         android:layout_marginStart="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/profile"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/district"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/home_icon" />
 
     <ImageView
-        android:id="@+id/notification"
+        android:id="@+id/district"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988"
-        app:srcCompat="@drawable/notificationicon" />
-
-
-
+        app:srcCompat="@drawable/district_icon" />
 
 
     <ImageView
@@ -71,9 +79,8 @@
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131"
+        app:layout_constraintVertical_bias="0.035"
         app:srcCompat="@drawable/location_icon" />
-
 
     <TextView
         android:id="@+id/location"
@@ -87,21 +94,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView30"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="625dp"
+        android:layout_height="620dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/notification"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search"
-        app:layout_constraintVertical_bias="0.90">
+        app:layout_constraintVertical_bias="1.0">
 
 
         <LinearLayout
@@ -111,24 +118,24 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_marginTop="30dp"
-                android:layout_marginStart="10dp"
                 android:layout_width="370dp"
                 android:layout_height="130dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/rectwithradiusred"
                 tools:layout_editor_absoluteX="72dp" />
 
 
             <TextView
                 android:id="@+id/textView"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="-80dp"
-                android:layout_marginStart="110dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="OFFERS FOR YOU" />
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="-80dp"
+                android:text="OFFERS FOR YOU"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -329,24 +336,24 @@
 
             <ImageView
                 android:id="@+id/imageView211"
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="10dp"
                 android:layout_width="370dp"
                 android:layout_height="130dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
                 app:srcCompat="@drawable/rectwithradiusdarkblue"
                 tools:layout_editor_absoluteX="72dp" />
 
 
             <TextView
                 android:id="@+id/textView11"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:layout_marginTop="-80dp"
-                android:layout_marginStart="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SEARCH BY DISTRICTS" />
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="-80dp"
+                android:text="SEARCH BY DISTRICTS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
             <LinearLayout
@@ -361,8 +368,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="100dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd1"
@@ -375,11 +382,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="COIMBATORE"/>
+                        android:layout_marginTop="8dp"
+                        android:text="COIMBATORE"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -389,8 +396,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd2"
@@ -403,11 +410,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TIRUPUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TIRUPUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -417,8 +424,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd3"
@@ -431,11 +438,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TIRUNELVELI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TIRUNELVELI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -445,8 +452,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd4"
@@ -459,11 +466,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="CHENNAI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="CHENNAI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -473,8 +480,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd5"
@@ -487,11 +494,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="CHENGALPATTU"/>
+                        android:layout_marginTop="8dp"
+                        android:text="CHENGALPATTU"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -501,8 +508,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd6"
@@ -515,11 +522,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="ARIYALUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="ARIYALUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -529,8 +536,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd7"
@@ -543,11 +550,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="CUDDALORE"/>
+                        android:layout_marginTop="8dp"
+                        android:text="CUDDALORE"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -557,8 +564,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd8"
@@ -571,11 +578,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="DHARMAPURI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="DHARMAPURI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -585,8 +592,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd9"
@@ -599,11 +606,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="DINDIGUL"/>
+                        android:layout_marginTop="8dp"
+                        android:text="DINDIGUL"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -613,8 +620,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd10"
@@ -627,11 +634,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="ERODE"/>
+                        android:layout_marginTop="8dp"
+                        android:text="ERODE"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -642,8 +649,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd11"
@@ -656,11 +663,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="KALLAKURICHI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="KALLAKURICHI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -670,8 +677,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd12"
@@ -684,11 +691,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="KANCHEEPURAM"/>
+                        android:layout_marginTop="8dp"
+                        android:text="KANCHEEPURAM"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -698,8 +705,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd13"
@@ -712,11 +719,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="KARUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="KARUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -726,8 +733,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd14"
@@ -740,11 +747,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="KANYAKUMARI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="KANYAKUMARI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -754,8 +761,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd15"
@@ -768,11 +775,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="KRISHNAGIRI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="KRISHNAGIRI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -782,8 +789,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd16"
@@ -796,11 +803,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="MADURAI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="MADURAI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -810,8 +817,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd17"
@@ -824,11 +831,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="NAGAPPATTINAM"/>
+                        android:layout_marginTop="8dp"
+                        android:text="NAGAPPATTINAM"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -838,8 +845,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd18"
@@ -852,11 +859,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="NAMAKKAL"/>
+                        android:layout_marginTop="8dp"
+                        android:text="NAMAKKAL"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -866,8 +873,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd19"
@@ -880,11 +887,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="Nilgiris"/>
+                        android:layout_marginTop="8dp"
+                        android:text="Nilgiris"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -894,8 +901,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd20"
@@ -908,11 +915,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="PERAMBULUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="PERAMBULUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -922,8 +929,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd21"
@@ -936,11 +943,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="PUDUKKOTTAI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="PUDUKKOTTAI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -950,8 +957,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd22"
@@ -964,11 +971,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="RAMANATHAPURAM"/>
+                        android:layout_marginTop="8dp"
+                        android:text="RAMANATHAPURAM"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -978,8 +985,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd23"
@@ -992,11 +999,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="RANIPET"/>
+                        android:layout_marginTop="8dp"
+                        android:text="RANIPET"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1006,8 +1013,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd24"
@@ -1020,11 +1027,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="SALEM"/>
+                        android:layout_marginTop="8dp"
+                        android:text="SALEM"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1034,8 +1041,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd25"
@@ -1048,11 +1055,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="SIVAGANGAI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="SIVAGANGAI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1062,8 +1069,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd26"
@@ -1076,11 +1083,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TENKASI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TENKASI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1090,8 +1097,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd27"
@@ -1104,11 +1111,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="THANJAVUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="THANJAVUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1119,8 +1126,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd28"
@@ -1133,11 +1140,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="THENI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="THENI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1147,8 +1154,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd29"
@@ -1161,11 +1168,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="THIRUVALLUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="THIRUVALLUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1175,8 +1182,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd30"
@@ -1189,11 +1196,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="THOOTHUKUDI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="THOOTHUKUDI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1203,8 +1210,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd31"
@@ -1217,11 +1224,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TIRUPPATHUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TIRUPPATHUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1231,8 +1238,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd32"
@@ -1245,11 +1252,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TIRUVANNAMALAI"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TIRUVANNAMALAI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1259,8 +1266,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd33"
@@ -1273,11 +1280,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TIRUVARUR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TIRUVARUR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1287,8 +1294,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd34"
@@ -1301,11 +1308,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="TRICHY"/>
+                        android:layout_marginTop="8dp"
+                        android:text="TRICHY"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1315,8 +1322,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd35"
@@ -1329,11 +1336,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="VELLORE"/>
+                        android:layout_marginTop="8dp"
+                        android:text="VELLORE"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1343,8 +1350,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd36"
@@ -1357,11 +1364,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="VILLUPURAM"/>
+                        android:layout_marginTop="8dp"
+                        android:text="VILLUPURAM"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1371,8 +1378,8 @@
                     android:layout_height="200dp"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="50dp"
-                    android:orientation="vertical"
-                    android:background="#363BC3">
+                    android:background="#363BC3"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imgd37"
@@ -1385,11 +1392,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:layout_marginTop="8dp"
                         android:layout_marginStart="90dp"
-                        android:text="VIRUDHUNAGAR"/>
+                        android:layout_marginTop="8dp"
+                        android:text="VIRUDHUNAGAR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -1404,32 +1411,19 @@
     <EditText
         android:id="@+id/search"
         android:layout_width="362dp"
-        android:layout_height="46dp"
+        android:layout_height="55dp"
         android:background="@drawable/rectwithradius"
         android:ems="10"
-        android:hint="             search for districts"
+        android:hint="           search for districts"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral40"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.1" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="46dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411"
-        app:srcCompat="@drawable/search_icon" />
 
 
 

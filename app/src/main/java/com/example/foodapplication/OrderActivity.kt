@@ -1,15 +1,12 @@
 package com.example.foodapplication
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Toast
-import com.example.foodapplication.notification.NotificationActivity
-import java.util.Calendar
+import com.example.foodapplication.district.DistrictActivity
 
 class OrderActivity : AppCompatActivity() {
     private lateinit var buy: Button
@@ -28,7 +25,7 @@ class OrderActivity : AppCompatActivity() {
             if(quantity.text.toString().trim().isBlank() || number.text.toString().trim().isBlank() || address.text.toString().trim().isBlank() || date.text.toString().trim().isBlank()){
                 Toast.makeText(this,"Please fill the details",Toast.LENGTH_SHORT).show()
             }else{
-                val intent = Intent(this,NotificationActivity::class.java)
+                val intent = Intent(this, DistrictActivity::class.java)
                 intent.putExtra("message","Your Order has Successfully Completed")
                 startActivity(intent)
             }
