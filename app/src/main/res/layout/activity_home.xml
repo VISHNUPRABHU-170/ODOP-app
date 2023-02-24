@@ -29,7 +29,7 @@
         app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintVertical_bias="0.025"
         app:srcCompat="@drawable/user_icon_removebg_preview" />
 
     <ImageView
@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/location_icon" />
 
     <TextView
@@ -94,12 +94,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView30"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.9" />
+        app:layout_constraintVertical_bias="2.2" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="620dp"
+        android:layout_height="637dp"
         android:layout_marginTop="65dp"
         android:background="@color/white"
         android:orientation="horizontal"
@@ -113,7 +113,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="625dp"
+            android:layout_height="628dp"
             android:orientation="vertical">
 
             <ImageView
@@ -348,7 +348,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintVertical_bias="0.02"
         app:srcCompat="@drawable/border"></ImageView>
 
     <TextView
@@ -362,7 +362,7 @@
         app:layout_constraintHorizontal_bias="0.287"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -373,7 +373,7 @@
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
+        app:layout_constraintVertical_bias="0.035"
         app:srcCompat="@drawable/search" />
 
 

@@ -326,7 +326,7 @@ class DistrictActivity : AppCompatActivity() {
         district = findViewById(R.id.district)
         cart = findViewById(R.id.cart)
         home = findViewById(R.id.home)
-        search = findViewById(R.id.searchicon)
+        search = findViewById(R.id.search)
         d1=findViewById(R.id.imgd1)
         d2=findViewById(R.id.imgd2)
         d3=findViewById(R.id.imgd3)

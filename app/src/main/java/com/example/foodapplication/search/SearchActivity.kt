@@ -1,8 +1,10 @@
 package com.example.foodapplication.search
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.ArrayMap
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
@@ -22,6 +24,8 @@ class SearchActivity : AppCompatActivity() {
 
         init()
 
+
+
         search.setOnClickListener(){
             val str: String = search.query.toString().toLowerCase()
             if(str.contains("ariyalur")){
@@ -36,6 +40,7 @@ class SearchActivity : AppCompatActivity() {
             }else if(str.contains("coimbatore")){
                 val intent = Intent(this, CoimbatoreActivity::class.java)
                 startActivity(intent)
+
             }else if(str.contains("cuddalore")){
                 val intent = Intent(this, CuddaloreActivity::class.java)
                 startActivity(intent)
