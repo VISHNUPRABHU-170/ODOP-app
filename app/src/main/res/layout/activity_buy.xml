@@ -41,10 +41,9 @@
         android:layout_marginEnd="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintVertical_bias="0.318"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
@@ -55,11 +54,11 @@
         android:layout_marginEnd="90dp"
         android:text="TextView"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.227" />
 </androidx.constraintlayout.widget.ConstraintLayout>

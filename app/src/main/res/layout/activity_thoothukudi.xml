@@ -52,7 +52,7 @@
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="0dp"
-                app:srcCompat="@drawable/silk_sarees" />
+                app:srcCompat="@drawable/tuticotrin_macroon1_removebg_preview" />
 
             <TextView
                 android:id="@+id/textView24"
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="160dp"
                 android:layout_marginTop="10dp"
-                android:text="SILK SAREES"
+                android:text="MACROON"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -76,131 +76,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/palm" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:layout_marginTop="10dp"
-                android:text="PALM"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/motor" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="170dp"
-                android:layout_marginTop="10dp"
-                android:text="MOTORS"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider6"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/image4"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/car_parts" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="-30dp"
-                android:text="CAR PARTS"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/image5"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="40dp"
-                app:srcCompat="@drawable/automative_components" />
-
-            <TextView
-                android:id="@+id/textView28"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="0dp"
-                android:text="AUTOMATIVE COMPONENTS"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider8"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
 
         </LinearLayout>
 

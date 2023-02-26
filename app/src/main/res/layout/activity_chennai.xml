@@ -45,44 +45,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <ImageView
-                android:id="@+id/image1"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="0dp"
-                app:srcCompat="@drawable/kancheepuram_silksaree" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
-                android:layout_marginTop="10dp"
-                android:text="KANCHEEPURAM SILK SAREES"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider4"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/automobile_accessiors" />
 
             <TextView
@@ -108,36 +76,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
 
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="300dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="60dp"
-                app:srcCompat="@drawable/tanjore_painting" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="110dp"
-                android:layout_marginTop="30dp"
-                android:text="TANJAORE PAINTINGS"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <View
-                android:id="@+id/divider6"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/material_dynamic_secondary70"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.734"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
 
             <ImageView
                 android:id="@+id/image4"

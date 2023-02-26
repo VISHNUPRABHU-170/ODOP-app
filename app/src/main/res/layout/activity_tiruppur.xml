@@ -50,7 +50,7 @@
                 android:id="@+id/image1"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/t_shirt_1" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="10dp"
                 android:text="T - SHIRT"
                 android:textColor="@color/black"
@@ -81,7 +81,7 @@
                 android:id="@+id/image2"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="60dp"
                 app:srcCompat="@drawable/t_shirt_2" />
 
@@ -89,7 +89,7 @@
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="10dp"
                 android:text="T - SHIRT"
                 android:textColor="@color/black"
@@ -112,7 +112,7 @@
                 android:id="@+id/image3"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="60dp"
                 app:srcCompat="@drawable/pant" />
 
@@ -143,7 +143,7 @@
                 android:id="@+id/image4"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="30dp"
                 app:srcCompat="@drawable/shorts" />
 
@@ -151,7 +151,7 @@
                 android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="170dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="-30dp"
                 android:text="SHORTS"
                 android:textColor="@color/black"
@@ -174,7 +174,7 @@
                 android:id="@+id/image5"
                 android:layout_width="300dp"
                 android:layout_height="250dp"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="40dp"
                 android:layout_marginTop="40dp"
                 app:srcCompat="@drawable/shirts" />
 
@@ -183,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="160dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="10dp"
                 android:text="SHIRTS"
                 android:textColor="@color/black"
                 android:textSize="18sp" />

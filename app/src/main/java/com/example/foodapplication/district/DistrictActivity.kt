@@ -31,7 +31,6 @@ class DistrictActivity : AppCompatActivity() {
     private lateinit var d8: ImageView
     private lateinit var d9: ImageView
     private lateinit var d10: ImageView
-    private lateinit var d11: ImageView
     private lateinit var d12: ImageView
     private lateinit var d13: ImageView
     private lateinit var d14: ImageView
@@ -41,7 +40,6 @@ class DistrictActivity : AppCompatActivity() {
     private lateinit var d18: ImageView
     private lateinit var d19: ImageView
     private lateinit var d20: ImageView
-    private lateinit var d21: ImageView
     private lateinit var d22: ImageView
     private lateinit var d23: ImageView
     private lateinit var d24: ImageView
@@ -52,7 +50,6 @@ class DistrictActivity : AppCompatActivity() {
     private lateinit var d29: ImageView
     private lateinit var d30: ImageView
     private lateinit var d31: ImageView
-    private lateinit var d32: ImageView
     private lateinit var d33: ImageView
     private lateinit var d34: ImageView
     private lateinit var d35: ImageView
@@ -76,7 +73,6 @@ class DistrictActivity : AppCompatActivity() {
         images8()
         images9()
         images10()
-        images11()
         images12()
         images13()
         images14()
@@ -86,7 +82,6 @@ class DistrictActivity : AppCompatActivity() {
         images18()
         images19()
         images20()
-        images21()
         images22()
         images23()
         images24()
@@ -97,7 +92,6 @@ class DistrictActivity : AppCompatActivity() {
         images29()
         images30()
         images31()
-        images32()
         images33()
         images34()
         images35()
@@ -180,11 +174,6 @@ class DistrictActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        d11.setOnClickListener(){
-            val intent = Intent(this,KallakurichiActivity::class.java)
-            startActivity(intent)
-        }
-
         d12.setOnClickListener(){
             val intent = Intent(this,KancheepuramActivity::class.java)
             startActivity(intent)
@@ -230,10 +219,7 @@ class DistrictActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        d21.setOnClickListener(){
-            val intent = Intent(this,PudukkottaiActivity::class.java)
-            startActivity(intent)
-        }
+
 
         d22.setOnClickListener(){
             val intent = Intent(this,RamanathapuramActivity::class.java)
@@ -281,14 +267,10 @@ class DistrictActivity : AppCompatActivity() {
         }
 
         d31.setOnClickListener(){
-            val intent = Intent(this,TiruppathurActivity::class.java)
-            startActivity(intent)
-        }
-
-        d32.setOnClickListener(){
             val intent = Intent(this,TiruvannamalaiActivity::class.java)
             startActivity(intent)
         }
+
 
         d33.setOnClickListener(){
             val intent = Intent(this,TiruvarurActivity::class.java)
@@ -337,7 +319,6 @@ class DistrictActivity : AppCompatActivity() {
         d8=findViewById(R.id.imgd8)
         d9=findViewById(R.id.imgd9)
         d10=findViewById(R.id.imgd10)
-        d11=findViewById(R.id.imgd11)
         d12=findViewById(R.id.imgd12)
         d13=findViewById(R.id.imgd13)
         d14=findViewById(R.id.imgd14)
@@ -347,7 +328,6 @@ class DistrictActivity : AppCompatActivity() {
         d18=findViewById(R.id.imgd18)
         d19=findViewById(R.id.imgd19)
         d20=findViewById(R.id.imgd20)
-        d21=findViewById(R.id.imgd21)
         d22=findViewById(R.id.imgd22)
         d23=findViewById(R.id.imgd23)
         d24=findViewById(R.id.imgd24)
@@ -358,7 +338,6 @@ class DistrictActivity : AppCompatActivity() {
         d29=findViewById(R.id.imgd29)
         d30=findViewById(R.id.imgd30)
         d31=findViewById(R.id.imgd31)
-        d32=findViewById(R.id.imgd32)
         d33=findViewById(R.id.imgd33)
         d34=findViewById(R.id.imgd34)
         d35=findViewById(R.id.imgd35)
@@ -418,7 +397,7 @@ class DistrictActivity : AppCompatActivity() {
                 handler.postDelayed(this, 2000)
             }
         }
-        handler.postDelayed(runnable, 2000)
+        handler.postDelayed(runnable, 2500)
     }
 
     private fun images4() {
@@ -426,14 +405,14 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.automobile_accessiors,R.drawable.medical_equipments,R.drawable.organic_foods,R.drawable.oil_expeller,R.drawable.tamarind_chilli)
+            val imageArray = intArrayOf(R.drawable.medical_equipments,R.drawable.automobile_accessiors,R.drawable.organic_foods,)
             override fun run() {
                 d4.setImageResource(imageArray.get(i))
                 i++
                 if (i > imageArray.size - 1) {
                     i = 0
                 }
-                handler.postDelayed(this, 2000)
+                handler.postDelayed(this, 2200)
             }
         }
         handler.postDelayed(runnable, 2000)
@@ -444,7 +423,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.auto_parts)
             override fun run() {
                 d5.setImageResource(imageArray.get(i))
                 i++
@@ -479,7 +458,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.cashew_products)
             override fun run() {
                 d7.setImageResource(imageArray.get(i))
                 i++
@@ -496,7 +475,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.shirts, R.drawable.pants)
             override fun run() {
                 d8.setImageResource(imageArray.get(i))
                 i++
@@ -513,7 +492,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.coir_ropes)
             override fun run() {
                 d9.setImageResource(imageArray.get(i))
                 i++
@@ -530,26 +509,9 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.turmeric_powder)
             override fun run() {
                 d10.setImageResource(imageArray.get(i))
-                i++
-                if (i > imageArray.size - 1) {
-                    i = 0
-                }
-                handler.postDelayed(this, 2000)
-            }
-        }
-        handler.postDelayed(runnable, 2000)
-    }
-    private fun images11() {
-
-        val handler = Handler()
-        val runnable: Runnable = object : Runnable {
-            var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
-            override fun run() {
-                d11.setImageResource(imageArray.get(i))
                 i++
                 if (i > imageArray.size - 1) {
                     i = 0
@@ -564,7 +526,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.sares,R.drawable.kancheepuram_silksaree,R.drawable.chinavengaya_muruku)
             override fun run() {
                 d12.setImageResource(imageArray.get(i))
                 i++
@@ -580,7 +542,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.handloom_products)
             override fun run() {
                 d13.setImageResource(imageArray.get(i))
                 i++
@@ -597,7 +559,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.fruits,R.drawable.ships)
             override fun run() {
                 d14.setImageResource(imageArray.get(i))
                 i++
@@ -614,7 +576,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.images__3__removebg_preview,R.drawable.krishnagirimango)
             override fun run() {
                 d15.setImageResource(imageArray.get(i))
                 i++
@@ -631,7 +593,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.fashion,R.drawable.fashion_sarees)
             override fun run() {
                 d16.setImageResource(imageArray.get(i))
                 i++
@@ -648,7 +610,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.dried_fish)
             override fun run() {
                 d17.setImageResource(imageArray.get(i))
                 i++
@@ -665,7 +627,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.eggs)
             override fun run() {
                 d18.setImageResource(imageArray.get(i))
                 i++
@@ -681,7 +643,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.tea_powder,R.drawable.green_tea)
             override fun run() {
                 d19.setImageResource(imageArray.get(i))
                 i++
@@ -697,25 +659,9 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.perambalur_somas)
             override fun run() {
                 d20.setImageResource(imageArray.get(i))
-                i++
-                if (i > imageArray.size - 1) {
-                    i = 0
-                }
-                handler.postDelayed(this, 2000)
-            }
-        }
-        handler.postDelayed(runnable, 2000)
-    }private fun images21() {
-
-        val handler = Handler()
-        val runnable: Runnable = object : Runnable {
-            var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
-            override fun run() {
-                d21.setImageResource(imageArray.get(i))
                 i++
                 if (i > imageArray.size - 1) {
                     i = 0
@@ -729,7 +675,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.sweet)
             override fun run() {
                 d22.setImageResource(imageArray.get(i))
                 i++
@@ -745,7 +691,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.leather_purse,R.drawable.leather_shoes)
             override fun run() {
                 d23.setImageResource(imageArray.get(i))
                 i++
@@ -761,7 +707,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.mangoo,R.drawable.sweetss)
             override fun run() {
                 d24.setImageResource(imageArray.get(i))
                 i++
@@ -777,7 +723,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.coir_ropes)
             override fun run() {
                 d25.setImageResource(imageArray.get(i))
                 i++
@@ -793,7 +739,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.coir_pith_blocks)
             override fun run() {
                 d26.setImageResource(imageArray.get(i))
                 i++
@@ -809,7 +755,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.fresh_coconut,R.drawable.tanjore_painting)
             override fun run() {
                 d27.setImageResource(imageArray.get(i))
                 i++
@@ -825,7 +771,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.handicrafts,R.drawable.jeera_murukku)
             override fun run() {
                 d28.setImageResource(imageArray.get(i))
                 i++
@@ -841,7 +787,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.auto_components)
             override fun run() {
                 d29.setImageResource(imageArray.get(i))
                 i++
@@ -857,7 +803,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.tuticotrin_macroon1_removebg_preview)
             override fun run() {
                 d30.setImageResource(imageArray.get(i))
                 i++
@@ -873,25 +819,9 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.edibleoil,R.drawable.groundnutoil)
             override fun run() {
                 d31.setImageResource(imageArray.get(i))
-                i++
-                if (i > imageArray.size - 1) {
-                    i = 0
-                }
-                handler.postDelayed(this, 2000)
-            }
-        }
-        handler.postDelayed(runnable, 2000)
-    }private fun images32() {
-
-        val handler = Handler()
-        val runnable: Runnable = object : Runnable {
-            var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
-            override fun run() {
-                d32.setImageResource(imageArray.get(i))
                 i++
                 if (i > imageArray.size - 1) {
                     i = 0
@@ -905,7 +835,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.coconut_oil,R.drawable.garlic)
             override fun run() {
                 d33.setImageResource(imageArray.get(i))
                 i++
@@ -921,7 +851,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.snacks,R.drawable.sweets)
             override fun run() {
                 d34.setImageResource(imageArray.get(i))
                 i++
@@ -937,7 +867,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.bags,R.drawable.luggage_bags,R.drawable.belt)
             override fun run() {
                 d35.setImageResource(imageArray.get(i))
                 i++
@@ -953,7 +883,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.rices,R.drawable.orgainc_rices)
             override fun run() {
                 d36.setImageResource(imageArray.get(i))
                 i++
@@ -969,7 +899,7 @@ class DistrictActivity : AppCompatActivity() {
         val handler = Handler()
         val runnable: Runnable = object : Runnable {
             var i = 0
-            val imageArray = intArrayOf(R.drawable.cashew_nuts,R.drawable.kaju_katli,R.drawable.indigo_powder)
+            val imageArray = intArrayOf(R.drawable.first_aid_clothes,R.drawable.gauze_cloth_towels)
             override fun run() {
                 d37.setImageResource(imageArray.get(i))
                 i++

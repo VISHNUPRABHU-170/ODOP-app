@@ -6,6 +6,7 @@ import android.os.Handler
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ScrollView
+import android.widget.HorizontalScrollView
 import android.widget.SearchView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -30,6 +31,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var uid: String
     private lateinit var search: ImageView
     private lateinit var scroll: ScrollView
+    private lateinit var hscroll: HorizontalScrollView
     private lateinit var img1: ImageView
     private lateinit var img2: ImageView
     private lateinit var img3: ImageView
@@ -179,7 +181,7 @@ class HomeActivity : AppCompatActivity() {
             val lo = it.child("str4").value
             location.text="Delivery to - ${lo.toString()}"
         }
-        scroll=findViewById(R.id.scrollView)
+        hscroll=findViewById(R.id.hscroll)
         img1=findViewById(R.id.image1)
         img2=findViewById(R.id.image2)
         img3=findViewById(R.id.image3)
