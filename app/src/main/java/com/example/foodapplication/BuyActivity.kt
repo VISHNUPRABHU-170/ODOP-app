@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.example.foodapplication.cart.CartActivity
 
 class BuyActivity : AppCompatActivity() {
@@ -24,9 +25,8 @@ class BuyActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        add.setOnClickListener(){
-            val intent = Intent(this,CartActivity::class.java)
-            startActivity(intent)
+        add.setOnClickListener() {
+            Toast.makeText(this,"Successfully Added to cart",Toast.LENGTH_SHORT).show()
         }
         val img: ImageView = findViewById(R.id.img)
         val text: TextView = findViewById(R.id.name)

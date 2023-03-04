@@ -25,8 +25,8 @@ class OrderActivity : AppCompatActivity() {
             if(quantity.text.toString().trim().isBlank() || number.text.toString().trim().isBlank() || address.text.toString().trim().isBlank() || date.text.toString().trim().isBlank()){
                 Toast.makeText(this,"Please fill the details",Toast.LENGTH_SHORT).show()
             }else{
-                val intent = Intent(this, DistrictActivity::class.java)
-                intent.putExtra("message","Your Order has Successfully Completed")
+                val intent = Intent(this, HomeActivity::class.java)
+                Toast.makeText(this,"Your Order has Successfully Completed",Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             }
         }
