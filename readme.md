@@ -1,2 +1,2 @@
                                                     UI(FIGMA)
-![ODOP UI](https://user-images.githubusercontent.com/89796024/224509420-9c785ff0-31a9-4f45-80f7-42adeac71774.png)
+![ODOP UI(figma)](https://user-images.githubusercontent.com/89796024/224509836-481a473d-ee59-4a6e-8c49-c9d478aa54e1.png)
