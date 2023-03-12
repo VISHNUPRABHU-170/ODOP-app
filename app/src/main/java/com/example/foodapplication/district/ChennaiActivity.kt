@@ -3,9 +3,8 @@ package com.example.foodapplication.district
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
-import com.example.foodapplication.BuyActivity
+import com.example.foodapplication.cart.BuyActivity
 import com.example.foodapplication.R
 
 class ChennaiActivity : AppCompatActivity() {
@@ -19,21 +18,21 @@ class ChennaiActivity : AppCompatActivity() {
         init()
 
         automobile.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.automobile_accessiors)
             intent.putExtra("name","AUTOMOBILE ACCESSORIES")
             startActivity(intent)
         }
 
         medicalequip.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.medical_equipments)
             intent.putExtra("name","MEDICAL EQUIPMENTS")
             startActivity(intent)
         }
 
         organicfoods.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.organic_foods)
             intent.putExtra("name","ORGANIC FOODS")
             startActivity(intent)

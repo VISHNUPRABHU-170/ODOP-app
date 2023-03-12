@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.foodapplication.BuyActivity
+import com.example.foodapplication.cart.BuyActivity
 import com.example.foodapplication.R
 
 class NilgirisActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class NilgirisActivity : AppCompatActivity() {
             startActivity(intent)
         }
         greentea.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.green_tea)
             intent.putExtra("name","GREEN TEA")
             startActivity(intent)

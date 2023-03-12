@@ -2,16 +2,13 @@ package com.example.foodapplication
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ScrollView
 import android.widget.HorizontalScrollView
-import android.widget.SearchView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.foodapplication.cart.BuyActivity
 import com.example.foodapplication.cart.CartActivity
-import com.example.foodapplication.district.*
 import com.example.foodapplication.district.DistrictActivity
 import com.example.foodapplication.profile.ProfileActivity
 import com.example.foodapplication.search.SearchActivity
@@ -88,105 +85,105 @@ class HomeActivity : AppCompatActivity() {
 
 
         img1.setOnClickListener(){
-            val intent = Intent(this@HomeActivity,BuyActivity::class.java)
+            val intent = Intent(this@HomeActivity, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.shirts)
             intent.putExtra("name","SHIRTS")
             startActivity(intent)
         }
 
         img2.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.pants)
             intent.putExtra("name","PANTS")
             startActivity(intent)
         }
 
         img3.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.t_shirt_1)
             intent.putExtra("name","T SHIRT")
             startActivity(intent)
         }
 
         img4.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.sweet)
             intent.putExtra("name","SWEET")
             startActivity(intent)
         }
 
         img5.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.bags)
             intent.putExtra("name","SHOOL BAGS")
             startActivity(intent)
         }
 
         img6.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.mangoo)
             intent.putExtra("name","MANGO")
             startActivity(intent)
         }
 
         img7.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.tea_powder)
             intent.putExtra("name","TEA POWDER")
             startActivity(intent)
         }
 
         img8.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.edibleoil)
             intent.putExtra("name","EDIBLE OIL")
             startActivity(intent)
         }
 
         img9.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.groundnutoil)
             intent.putExtra("name","GROUNDNUT OIL")
             startActivity(intent)
         }
 
         img10.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.millet)
             intent.putExtra("name","MILLET")
             startActivity(intent)
         }
 
         img11.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.coir_ropes)
             intent.putExtra("name","COIR ROPES")
             startActivity(intent)
         }
 
         img12.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.tanjore_painting)
             intent.putExtra("name","THANJAVUR PAINTS")
             startActivity(intent)
         }
 
         img13.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.garlic)
             intent.putExtra("name","GARLIC")
             startActivity(intent)
         }
 
         img14.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.rices)
             intent.putExtra("name","RICE")
             startActivity(intent)
         }
 
         img15.setOnClickListener(){
-            val intent = Intent(this,BuyActivity::class.java)
+            val intent = Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.port)
             intent.putExtra("name","PORT")
             startActivity(intent)

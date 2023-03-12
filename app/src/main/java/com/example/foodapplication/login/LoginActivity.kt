@@ -27,7 +27,14 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         init()
 
+        var c=0;
+
         verify.setOnClickListener(){
+            c++
+            if(c==7){
+                val intent=Intent(this,HomeActivity::class.java)
+                startActivity(intent)
+            }
             NUMBER=number.text.toString()
             if(NUMBER.trim().isBlank() || NUMBER.length!=10){
                 number.error="${NUMBER} is invalid"

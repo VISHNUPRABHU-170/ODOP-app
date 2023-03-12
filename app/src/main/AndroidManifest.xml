@@ -118,7 +118,7 @@
             android:name=".district.ChennaiActivity"
             android:exported="false" />
         <activity
-            android:name=".BuyActivity"
+            android:name=".cart.BuyActivity"
             android:exported="false" />
         <activity
             android:name=".district.TiruppurActivity"

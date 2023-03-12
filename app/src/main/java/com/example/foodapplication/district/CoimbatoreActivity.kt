@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.example.foodapplication.BuyActivity
+import com.example.foodapplication.cart.BuyActivity
 import com.example.foodapplication.R
 
 class CoimbatoreActivity : AppCompatActivity() {
@@ -20,35 +20,35 @@ class CoimbatoreActivity : AppCompatActivity() {
         init()
 
         saree.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.silk_sarees)
             intent.putExtra("name","SILK SAREE")
             startActivity(intent)
         }
 
         palm.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.palm)
             intent.putExtra("name","PALM")
             startActivity(intent)
         }
 
         motor.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.motor)
             intent.putExtra("name","MOTOR")
             startActivity(intent)
         }
 
         carparts.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.car_parts)
             intent.putExtra("name","CAR PARTS")
             startActivity(intent)
         }
 
         automative.setOnClickListener(){
-            val intent= Intent(this,BuyActivity::class.java)
+            val intent= Intent(this, BuyActivity::class.java)
             intent.putExtra("pic",R.drawable.automative_components)
             intent.putExtra("name","AUTOMATIVE COMPONENTS")
             startActivity(intent)
